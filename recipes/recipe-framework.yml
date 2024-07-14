@@ -10,14 +10,9 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - from-file: common-modules.yml
 
-  # TO REMOVE
-  # - Input Remapper
-  # - Document Scanner
-  # - Solaar
-
   - type: rpm-ostree
     remove:
-      - firefox
-      - firefox-langpacks
+      # - firefox
+      # - firefox-langpacks
       - input-remapper
       
