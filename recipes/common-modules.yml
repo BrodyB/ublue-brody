@@ -1,0 +1,60 @@
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - type: files
+    files:
+      - usr: /usr # copies config/files/usr into your image's /usr.
+                  # put configuration files you want in /etc/ on a booted system 
+                  # in /usr/etc/ in the image. read more in files module reference.
+
+  - type: rpm-ostree
+    repos:
+      https://packages.microsoft.com/keys/microsoft.asc
+    install:
+      - code
+      - xew
+
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      # repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        # Internet!
+        - one.ablaze.floorp
+        - com.discordapp.Discord
+        - flathub com.slack.Slack
+        - io.gitlab.news_flash.NewsFlash
+
+        # Media!
+        - org.gnome.Podcasts
+        - org.gnome.gitlab.YaLTeR.VideoTrimmer
+        - com.obsproject.Studio
+        # - NEED MUSIC PLAYER
+
+        # Productivity?
+        - md.obsidian.Obsidian
+        - org.libreoffice.LibreOffice
+
+        # Game Development!
+        - org.blender.Blender
+        - org.kde.krita
+        - io.itch.itch
+
+        # Gaming!
+        - com.usebottles.bottles
+        - com.valvesoftware.Steam
+        - com.github.Matoking.protontricks
+
+      remove:
+      - rg.gnome.SimpleScan
+
+  - type: gnome-extensions
+    install:
+      - 36 # Lock Keys indicator
+      - 307 # Dash-to-Dock
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+

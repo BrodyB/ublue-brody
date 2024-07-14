@@ -1,0 +1,17 @@
+# image will be published to ghcr.io/<user>/<name>
+name: ublue-brody-desktop
+# description will be included in the image's metadata
+description: A brodified version of Bazzite, meant as a daily driver game development environment!
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia:stable
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+modules:
+  - from-file: common-modules.yml
+
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      remove:
+        - org.mozilla.firefox
