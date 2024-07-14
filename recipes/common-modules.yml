@@ -1,12 +1,6 @@
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: scripts
-    snippets:
-      - "sudo rpm-ostree --import https://packages.microsoft.com/keys/microsoft.asc"
-      - 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc"'
-      - "sudo tee /etc/yum.repos.d/vscode.repo > /dev/null"
-
   - type: files
     files:
       - usr: /usr # copies config/files/usr into your image's /usr.
@@ -15,7 +9,6 @@ modules:
 
   - type: rpm-ostree
     install:
-      - code
       - xew
 
   - type: default-flatpaks
