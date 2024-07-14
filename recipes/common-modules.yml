@@ -9,7 +9,9 @@ modules:
 
   - type: rpm-ostree
     install:
-      - xew
+      - git
+      - git-lfs
+      - xev # Utility for getting keycodes from input devices
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -20,14 +22,13 @@ modules:
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         # Internet!
-        - one.ablaze.floorp
+        - one.ablaze.floorp # Fork of Firefox with a nice customizable interface
         - com.discordapp.Discord
         - flathub com.slack.Slack
-        - io.gitlab.news_flash.NewsFlash
+        - io.gitlab.news_flash.NewsFlash # An RSS reader
 
         # Media!
         - org.gnome.Podcasts
-        - org.gnome.gitlab.YaLTeR.VideoTrimmer
         - com.obsproject.Studio
         # - NEED MUSIC PLAYER
 
