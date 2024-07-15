@@ -1,0 +1,19 @@
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+
+[org.gnome.desktop.wm.preferences]
+num-workspaces=2
+
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+show-battery-percentage=true
+
+[org.gnome.mutter]
+check-alive-timeout=uint32 300
+dynamic-workspaces=false
+
+[org.gnome.settings-daemon.plugins.power]
+ambient-enabled=false
+
+[org.gnome.shell.extensions.blur-my-shell]
+sigma=8
