@@ -16,6 +16,7 @@ modules:
       - git
       - git-lfs
       - xev # Utility for getting keycodes from input devices
+      - fastfetch
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -52,6 +53,8 @@ modules:
 
       remove:
       - rg.gnome.SimpleScan
+      - org.mozilla.Thunderbird
+      - org.mozilla.firefox
 
   - type: gnome-extensions
     install:
@@ -60,4 +63,9 @@ modules:
       - Remove World Clocks
       - Quick Settings Audio Devices Renamer
       - Quick Settings Audio Devices Hider
+    remove:
+      - Apps Menu
+      - Places Status Indicator
+      - Caffeine
+
 
