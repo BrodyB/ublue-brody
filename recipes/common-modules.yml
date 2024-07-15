@@ -31,6 +31,7 @@ modules:
         - com.discordapp.Discord
         - flathub com.slack.Slack
         - io.gitlab.news_flash.NewsFlash # An RSS reader
+        - com.belmoussaoui.Authenticator
 
         # Media!
         - org.gnome.Podcasts
@@ -67,5 +68,10 @@ modules:
       - Apps Menu
       - Places Status Indicator
       - Caffeine
+      - Background Logo
+      - Tailscale QS
+      - Window List
+      - Launch New Instance
+      - Applications Menu
 
 

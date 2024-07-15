@@ -8,7 +8,15 @@ base-image: ghcr.io/ublue-os/bluefin
 image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
+  - type: script
+    scripts:
+      - removeBluefinWallpapers.sh
+
   - from-file: common-modules.yml
+
+  - type: files
+    files:
+      - usr: /framework-usr
 
   - type: rpm-ostree
     remove:
