@@ -10,7 +10,8 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - type: gschema-overrides
     include:
-      - zz1-framework-gnome.override
+      - zz1-framework.gschema.override
+
   - type: script
     scripts:
       - removeBluefinWallpapers.sh
