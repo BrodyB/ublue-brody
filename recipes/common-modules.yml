@@ -7,6 +7,10 @@ modules:
                   # put configuration files you want in /etc/ on a booted system 
                   # in /usr/etc/ in the image. read more in files module reference.
 
+  - type: bling
+    install:
+      - dconf-update-service
+
   - type: rpm-ostree
     install:
       - git
@@ -53,6 +57,7 @@ modules:
     install:
       - 36 # Lock Keys indicator
       - 307 # Dash-to-Dock
-
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+      - Remove World Clocks
+      - Quick Settings Audio Devices Renamer
+      - Quick Settings Audio Devices Hider
 
