@@ -1,10 +1,6 @@
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: script
-    scripts:
-      - removePlymouthIcon.sh
-
   - type: files
     files:
       - usr: /usr # copies config/files/usr into your image's /usr.
@@ -69,7 +65,6 @@ modules:
       - Quick Settings Audio Devices Renamer
       - Quick Settings Audio Devices Hider
     remove:
-      - Apps Menu
       - Places Status Indicator
       - Caffeine
       - Background Logo

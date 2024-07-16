@@ -12,15 +12,19 @@ modules:
     include:
       - zz1-framework.gschema.override
 
+  - type: files
+    files:
+      - framework-usr: /usr
+
   - type: script
     scripts:
       - removeBluefinWallpapers.sh
 
   - from-file: common-modules.yml
 
-  - type: files
-    files:
-      - usr: /framework-usr
+  - type: script
+    scripts:
+      - initramfs.sh
 
   - type: rpm-ostree
     remove:
