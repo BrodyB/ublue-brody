@@ -22,3 +22,6 @@ rm -f /usr/share/gnome-background-properties/xe_clouds.xml
 rm -f /usr/share/gnome-background-properties/xe_foothills.xml
 rm -f /usr/share/gnome-background-properties/xe_space_needle.xml
 rm -f /usr/share/gnome-background-properties/xe_sunset.xml
+
+# Also the Documentation shortcut in the Apps list
+rm -f /usr/share/applications/Documentation.desktop

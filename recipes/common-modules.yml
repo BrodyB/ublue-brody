@@ -3,9 +3,8 @@
 modules:
   - type: files
     files:
-      - usr: /usr # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
-                  # in /usr/etc/ in the image. read more in files module reference.
+      - usr: /usr
+      - etc: /etc
 
   - type: bling
     install:
@@ -13,10 +12,26 @@ modules:
 
   - type: rpm-ostree
     install:
+      - code
+      - clang
+      - gcc
       - git
       - git-lfs
       - xev # Utility for getting keycodes from input devices
       - fastfetch
+      - sassc
+      - p7zip
+      - p7zip-plugins
+    remove:
+      - simple-scan
+      - gnome-classic-session
+      - gnome-classic-session-xsession
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-background-logo
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
+      - gnome-shell-extension-caffeine
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -27,7 +42,7 @@ modules:
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         # Internet!
-        - one.ablaze.floorp # Fork of Firefox with a nice customizable interface
+        - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
         - com.discordapp.Discord
         - flathub com.slack.Slack
         - io.gitlab.news_flash.NewsFlash # An RSS reader
@@ -53,7 +68,6 @@ modules:
         - com.github.Matoking.protontricks
 
       remove:
-      - rg.gnome.SimpleScan
       - org.mozilla.Thunderbird
       - org.mozilla.firefox
 
@@ -64,13 +78,14 @@ modules:
       - Remove World Clocks
       - Quick Settings Audio Devices Renamer
       - Quick Settings Audio Devices Hider
-    remove:
-      - Places Status Indicator
-      - Caffeine
-      - Background Logo
-      - Tailscale QS
-      - Window List
-      - Launch New Instance
-      - Applications Menu
+      - Quick Close in Overview
+    # remove:
+      # - 8 # Places Status Indicator
+      # - 517 # Caffeine
+      # - 889 # Background Logo
+      # - 6139 # Tailscale QS
+      # - Window List
+      # - 600 # Launch New Instance
+      # - 6 # Applications Menu
 
 
