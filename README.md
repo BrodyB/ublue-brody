@@ -2,18 +2,27 @@
 
 > "*I'm not a "Linux Guy" really...*" &nbsp;&nbsp;&nbsp; - Brody Brooks, [May 15th, 2024](https://peoplemaking.games/@brody/112446054225760063)
 
-This repository holds the recipes for my personal, game development-focused modifications of Fedora Silverblue / Universal Blue!
+This repository holds the recipes for my personal, game development-focused modifications of [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/) / [Universal Blue](https://universal-blue.org/)!
 
 This makes use of the [BlueBuild](https://blue-build.org/) system, which makes it simple to roll your own ideal containerized Linux OS. Each of these recipes is custom-tailored for each of my active machines, but I've commented and documented them so anyone can copy what I've done for use in their own spins.
 
 I name each of my computers after fictional spacecraft, so each OS takes some light theming from that.
 
+<details>
+<summary>⚠️ What is an Atomic / Containerized Operating System?</summary>
+
+Put simply, it's where your operating system is read-only. You only have free read/write capability in your Home folder (Documents, Music, Pictures, hidden settings files, etc.). If you need system-level packages or libraries added, they can be layered onto the OS, but you're encouraged to work with applications that are isolated from your system like iOS apps (Flatpaks and Snaps).
+
+If anything goes wrong or you don't care for a change to your system you just made, your OS keeps track of changes like a Git/Subversion repository. You can simply revert to a previous change. So it's always easy to get back to a stable, reliable state.
+
+</details>
+
 ## Modifications
 For all the images described below, these changes are made:
 
-## Recipes
+## Software Added / Removed
 <details>
-<summary>Common - Software Added</summary>
+<summary>✔️ Common</summary>
 
 - Development
   - Visual Studio Code
@@ -49,23 +58,6 @@ For all the images described below, these changes are made:
 
 </details>
 
-<details>
-<summary>Common - Software Removed</summary>
-
-- Firefox
-- Thunderbird
-- Gnome Document Scanner
-- Gnome Classic Session
-- Gnome Classic Session X
-- Gnome Extensions
-  - Apps Menu
-  - Background Logo
-  - Launch New Instance
-  - Places Menu
-  - Window List
-  - Caffeine
-
-</details>
 
 ## Bluefin: Apollo Edition
 ![](config/files/framework-usr/share/pixmaps/fedora-logo-med.png)
