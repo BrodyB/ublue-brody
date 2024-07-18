@@ -62,10 +62,8 @@ modules:
         - org.kde.krita
         - io.itch.itch
 
-        # Gaming!
+        # Utilities
         - com.usebottles.bottles
-        - com.valvesoftware.Steam
-        - com.github.Matoking.protontricks
 
       remove:
       - org.mozilla.Thunderbird

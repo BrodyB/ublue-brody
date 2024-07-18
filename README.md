@@ -1,6 +1,6 @@
 # Universal Blue: Brody Edition &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
 
-> "*I'm not a "Linux Guy" really...*" &nbsp;&nbsp;&nbsp; - Brody Brooks, May 15th, 2024
+> "*I'm not a "Linux Guy" really...*" &nbsp;&nbsp;&nbsp; - Brody Brooks, [May 15th, 2024](https://peoplemaking.games/@brody/112446054225760063)
 
 This repository holds the recipes for my personal, game development-focused modifications of Fedora Silverblue / Universal Blue!
 
@@ -11,15 +11,17 @@ I name each of my computers after fictional spacecraft, so each OS takes their t
 ## Modifications
 For all the images described below, these changes are made:
 
-## Software Added
+## Recipes
+<details>
+<summary>Common - Software Added</summary>
 - Development
   - Visual Studio Code
-  - Clang
-  - GCC
-  - Git / Git-LFS
-  - Blender
-  - Krita
-  - Itch.io
+  - Clang (Compiles C code)
+  - GCC (also compiles C code)
+  - Git / Git-LFS (Somehow git version control isn't installed by default??)
+  - Blender (3D modeler)
+  - Krita (Photoshop replacement)
+  - Itch.io (I used this to download some tools/assets I own)
 - Internet
   - LibreWolf (Firefox stripped of tracking)
   - Discord
@@ -27,33 +29,49 @@ For all the images described below, these changes are made:
   - NewsFlash RSS reader
   - Authenticator (for keeping those 2FA keys)
 - Media
-  - Podcasts
+  - Podcasts (just a really nice, simple podcast application)
   - OBS Studio
 - Productivity
   - LibreOffice
-  - Obsidian
-- Gaming
-  - Steam
-  - ProtonTricks
+  - Obsidian (Markdown editor I use as a knowledge-base and task tracker)
 - Utilities
-  - 7zip
-  - xev
-  - Bottles
+  - 7zip (The best archiving tool around)
+  - xev (Tool to get keycodes and input event names)
+  - Bottles (Creates containers to run Windows applications)
 - Gnome Extensions
-  - Lock Keys Indicator
-  - Dash-to-Dock
+  - Lock Keys Indicator (Show the state of Caps Lock and Num Lock on top bar)
+  - Dash-to-Dock (Keep that dock visible on the bottom)
   - Remove World Clocks
   - Quick Settings Audio Devices Renamer
   - Quick Settings Audio Devices Hider
   - Quick Close in Overview
+</details>
+
+<details>
+<summary>Common - Software Removed</summary>
+- Firefox
+- Thunderbird
+- Gnome Document Scanner
+- Gnome Classic Session
+- Gnome Classic Session X
+- Gnome Extensions
+  - Apps Menu
+  - Background Logo
+  - Launch New Instance
+  - Places Menu
+  - Window List
+  - Caffeine
+</details>
 
 ## Bluefin: Apollo Edition
 ![](config/files/framework-usr/share/pixmaps/fedora-logo-med.png)
 - **System:** Framework 13 - AMD Ryzen 7 7840U
-- **Namesake:** GTF Apollo (Descent: FreeSpace)
-- **Based on:** Project Bluefin
+- **Namesake:** [GTF Apollo](https://wiki.hard-light.net/index.php/GTF_Apollo) (Descent: FreeSpace)
+- **Based on:** [Project Bluefin](https://projectbluefin.io/)
 
-## Installation
+This piggybacks off of Bluefin, which is a good general-purpose Fedora that uses the Gnome desktop environment. This recipe just strips out a bunch of things I didn't need and provides common development tools and needs. On a Framework laptop, I'm not gonna do much - if any - gaming, so it's more focused as a light workstation.
+
+### Installation
 To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
