@@ -1,4 +1,4 @@
-# Universal Blue: Brody Edition &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Universal Blue: Brody Edition &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml) ![Version](https://img.shields.io/badge/Brody_Quality-Guaranteed-blue)
 
 > "*I'm not a "Linux Guy" really...*" &nbsp;&nbsp;&nbsp; - Brody Brooks, [May 15th, 2024](https://peoplemaking.games/@brody/112446054225760063)
 
@@ -17,10 +17,7 @@ If anything goes wrong or you don't care for a change to your system you just ma
 
 </details>
 
-## Modifications
-For all the images described below, these changes are made:
-
-## Software Added / Removed
+## Software Provided by Default
 <details>
 <summary>✔️ Common</summary>
 
@@ -60,8 +57,8 @@ For all the images described below, these changes are made:
 
 
 ## Bluefin: Apollo Edition
-![](config/files/framework-usr/share/pixmaps/fedora-logo-med.png)
-- **System:** Framework 13 - AMD Ryzen 7 7840U
+![Bluefin Apollo Logo](config/files/framework-usr/share/pixmaps/fedora-logo-med.png)
+- **System:** [Framework 13](https://frame.work/) - AMD Ryzen 7 7840U
 - **Namesake:** [GTF Apollo](https://wiki.hard-light.net/index.php/GTF_Apollo) (Descent: FreeSpace)
 - **Based on:** [Project Bluefin](https://projectbluefin.io/)
 
@@ -86,8 +83,6 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
-
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
 ## ISO
 
