@@ -6,7 +6,7 @@ This repository holds the recipes for my personal, game development-focused modi
 
 This makes use of the [BlueBuild](https://blue-build.org/) system, which makes it simple to roll your own ideal containerized Linux OS. Each of these recipes is custom-tailored for each of my active machines, but I've commented and documented them so anyone can copy what I've done for use in their own spins.
 
-I name each of my computers after fictional spacecraft, so each OS takes their theming from that.
+I name each of my computers after fictional spacecraft, so each OS takes some light theming from that.
 
 ## Modifications
 For all the images described below, these changes are made:
@@ -14,6 +14,7 @@ For all the images described below, these changes are made:
 ## Recipes
 <details>
 <summary>Common - Software Added</summary>
+
 - Development
   - Visual Studio Code
   - Clang (Compiles C code)
@@ -45,10 +46,12 @@ For all the images described below, these changes are made:
   - Quick Settings Audio Devices Renamer
   - Quick Settings Audio Devices Hider
   - Quick Close in Overview
+
 </details>
 
 <details>
 <summary>Common - Software Removed</summary>
+
 - Firefox
 - Thunderbird
 - Gnome Document Scanner
@@ -61,6 +64,7 @@ For all the images described below, these changes are made:
   - Places Menu
   - Window List
   - Caffeine
+
 </details>
 
 ## Bluefin: Apollo Edition
