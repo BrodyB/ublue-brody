@@ -22,10 +22,6 @@ modules:
 
   - from-file: common-modules.yml
 
-  - type: script
-    scripts:
-      - initramfs.sh
-
   - type: rpm-ostree
     remove:
       # - firefox

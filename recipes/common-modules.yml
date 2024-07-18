@@ -1,6 +1,10 @@
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
+
   - type: files
     files:
       - usr: /usr
@@ -36,10 +40,6 @@ modules:
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         # Internet!
         - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
@@ -79,13 +79,8 @@ modules:
       - Quick Settings Audio Devices Renamer
       - Quick Settings Audio Devices Hider
       - Quick Close in Overview
-    # remove:
-      # - 8 # Places Status Indicator
-      # - 517 # Caffeine
-      # - 889 # Background Logo
-      # - 6139 # Tailscale QS
-      # - Window List
-      # - 600 # Launch New Instance
-      # - 6 # Applications Menu
 
-
+  
+  - type: script
+    scripts:
+      - initramfs.sh
