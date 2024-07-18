@@ -1,19 +1,64 @@
-# BlueBuild Template &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Universal Blue: Brody Edition &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+> "*I'm not a "Linux Guy" really...*" &nbsp;&nbsp;&nbsp; - Brody Brooks, May 15th, 2024
 
-After setup, it is recommended you update this README to describe your custom image.
+This repository holds the recipes for my personal, game development-focused modifications of Fedora Silverblue / Universal Blue!
+
+This makes use of the [BlueBuild](https://blue-build.org/) system, which makes it simple to roll your own ideal containerized Linux OS. Each of these recipes is custom-tailored for each of my active machines, but I've commented and documented them so anyone can copy what I've done for use in their own spins.
+
+I name each of my computers after fictional spacecraft, so each OS takes their theming from that.
+
+## Modifications
+For all the images described below, these changes are made:
+
+## Software Added
+- Development
+  - Visual Studio Code
+  - Clang
+  - GCC
+  - Git / Git-LFS
+  - Blender
+  - Krita
+  - Itch.io
+- Internet
+  - LibreWolf (Firefox stripped of tracking)
+  - Discord
+  - Slack
+  - NewsFlash RSS reader
+  - Authenticator (for keeping those 2FA keys)
+- Media
+  - Podcasts
+  - OBS Studio
+- Productivity
+  - LibreOffice
+  - Obsidian
+- Gaming
+  - Steam
+  - ProtonTricks
+- Utilities
+  - 7zip
+  - xev
+  - Bottles
+- Gnome Extensions
+  - Lock Keys Indicator
+  - Dash-to-Dock
+  - Remove World Clocks
+  - Quick Settings Audio Devices Renamer
+  - Quick Settings Audio Devices Hider
+  - Quick Close in Overview
+
+## Bluefin: Apollo Edition
+![](config/files/framework-usr/share/pixmaps/fedora-logo-med.png)
+- **System:** Framework 13 - AMD Ryzen 7 7840U
+- **Namesake:** GTF Apollo (Descent: FreeSpace)
+- **Based on:** Project Bluefin
 
 ## Installation
-
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
-
 To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/brodyb/ublue-brody-framework:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +66,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/brodyb/ublue-brody-framework:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -41,3 +86,8 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/blue-build/template
 ```
+
+## Credits
+- Default wallpaper by [Maciej Rebisz](https://linktr.ee/macrebisz) - [Sunrise](https://www.deviantart.com/macrebisz/art/Sunrise-667367161)
+- Some images from Descent: FreeSpace, developed by Volition, Inc. and published by Interplay Entertainment
+- Uses a modified version of [Tokyo Night](https://www.gnome-look.org/p/1681470) theme by [Fausto-Korpsvart](https://github.com/Fausto-Korpsvart)
