@@ -20,8 +20,6 @@ modules:
     scripts:
       - removeBluefinWallpapers.sh
 
-  - from-file: common-modules.yml
-
   - type: rpm-ostree
     remove:
       # - firefox
@@ -32,4 +30,6 @@ modules:
       - gnome-classic-session
       - gnome-classic-session-xsession
       
+
+  - from-file: common-modules.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
