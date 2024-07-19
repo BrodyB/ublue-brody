@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: ublue-brody-framework
+name: ublue-brody-apollo
 # description will be included in the image's metadata
 description: A brodified version of Bluefin, meant as a lightweight game development system!
 
