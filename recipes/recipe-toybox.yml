@@ -16,11 +16,6 @@ modules:
     files:
       - usr: /desktop-usr
 
-  - type: rpm-ostree
-    remove:
-      - lutris
-      - waydroid
-
   - from-file: common-modules.yml
 
   - type: default-flatpaks
