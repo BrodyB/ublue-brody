@@ -5,23 +5,23 @@ description: A brodified version of Bazzite, meant as a daily driver powerhouse 
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
-image-version: stable # latest is also supported if you want new updates ASAP
+image-version: stable
 
 modules:
-  - type: gschema-overrides
-    include:
-      - zz1-desktop.gschema.override
+  # - type: gschema-overrides
+  #   include:
+  #     - zz1-desktop.gschema.override
 
   - type: files
     files:
       - usr: /desktop-usr
-
-  - from-file: common-modules.yml
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       remove:
         - org.mozilla.firefox
+
+  - from-file: common-modules.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
