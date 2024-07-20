@@ -69,7 +69,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/brodyb/ublue-brody-framework:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/brodyb/ublue-brody-apollo:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -77,12 +77,42 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/brodyb/ublue-brody-framework:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/brodyb/ublue-brody-apollo:latest
   ```
 - Reboot again to complete the installation
   ```
   systemctl reboot
   ```
+
+
+## Bazzite: Toybox Edition
+![Bazzite Toybox Logo](config/files/desktop-usr/share/plymouth/themes/spinner/watermark.png)
+- **System:** Custom Build - AMD Ryzen 7 / 32GB RAM / 5TB / GeForce RTX 4070 Ti
+- **Namesake:** [DS-12 Toybox](https://en.wikipedia.org/wiki/Planetes) (PLANETES)
+- **Based on:** [Bazzite](https://bazzite.gg/)
+
+Deriving from Bazzite, a gaming-focused image, I built this to be my daily driver for game development work. Plus play a game every now-and-then. Includes everything from Apollo, but with more things for gaming and running virtual machines.
+
+### Installation
+To rebase an existing atomic Fedora installation to the latest build:
+
+- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/brodyb/ublue-brody-toybox:latest
+  ```
+- Reboot to complete the rebase:
+  ```
+  systemctl reboot
+  ```
+- Then rebase to the signed image, like so:
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/brodyb/ublue-brody-toybox:latest
+  ```
+- Reboot again to complete the installation
+  ```
+  systemctl reboot
+  ```
+
 
 ## ISO
 

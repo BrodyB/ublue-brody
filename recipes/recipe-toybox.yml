@@ -18,4 +18,20 @@ modules:
 
   - from-file: common-modules.yml
 
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      install:
+        - org.gnome.Boxes
+
+  - type: rpm-ostree
+    remove:
+      - waydroid-selinux
+      - waydroid
+      - lutris
+      - gnome-shell-extension-hanabi
+      - gnome-shell-extension-gamerzilla
+      - gnome-shell-extension-compiz-windows-effect
+      - gnome-shell-extension-compiz-alike-magic-lamp-effect
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
