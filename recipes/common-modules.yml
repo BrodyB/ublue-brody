@@ -45,7 +45,7 @@ modules:
         # Internet!
         - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
         - com.discordapp.Discord
-        - flathub com.slack.Slack
+        - com.slack.Slack
         - io.gitlab.news_flash.NewsFlash # An RSS reader
         - com.belmoussaoui.Authenticator
         # Haven't settled on an email client
