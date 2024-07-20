@@ -1,10 +1,12 @@
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  # Set default Gnome settings
   - type: gschema-overrides
     include:
       - zz1-common.gschema.override
 
+  # Copy files over destined for the /usr and /usr/etc directories
   - type: files
     files:
       - usr: /usr
@@ -14,6 +16,7 @@ modules:
     install:
       - dconf-update-service
 
+  # Install OS-level software and remove some existing packages
   - type: rpm-ostree
     install:
       - code
@@ -34,6 +37,7 @@ modules:
       - gnome-shell-extension-window-list
       - gnome-shell-extension-caffeine
 
+  # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -44,6 +48,7 @@ modules:
         - flathub com.slack.Slack
         - io.gitlab.news_flash.NewsFlash # An RSS reader
         - com.belmoussaoui.Authenticator
+        # Haven't settled on an email client
 
         # Media!
         - org.gnome.Podcasts
@@ -66,6 +71,7 @@ modules:
       - org.mozilla.Thunderbird
       - org.mozilla.firefox
 
+  # Add these Gnome extentions
   - type: gnome-extensions
     install:
       - 36 # Lock Keys indicator
@@ -75,7 +81,7 @@ modules:
       - Quick Settings Audio Devices Hider
       - Quick Close in Overview
 
-  
+  # This script is needed to make the 'files' module changes stick
   - type: script
     scripts:
       - initramfs.sh

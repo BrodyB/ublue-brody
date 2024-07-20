@@ -8,28 +8,30 @@ base-image: ghcr.io/ublue-os/bluefin
 image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
+  # Gnome settings to set for the laptop only
   - type: gschema-overrides
     include:
       - zz1-framework.gschema.override
 
+  # Laptop-specific files to copy in
   - type: files
     files:
       - framework-usr: /usr
 
+  # Remove Bluefin's included wallpapers
   - type: script
     scripts:
       - removeBluefinWallpapers.sh
 
+  # Don't need these packages on the laptop
   - type: rpm-ostree
     remove:
-      # - firefox
-      # - firefox-langpacks
       - input-remapper
       - solaar
       - simple-scan
       - gnome-classic-session
       - gnome-classic-session-xsession
       
-
+  # Include everything from the common includes
   - from-file: common-modules.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

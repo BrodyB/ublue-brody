@@ -16,8 +16,6 @@ modules:
     files:
       - usr: /desktop-usr
 
-  - from-file: common-modules.yml
-
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -34,4 +32,5 @@ modules:
       - gnome-shell-extension-compiz-windows-effect
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
+  - from-file: common-modules.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
