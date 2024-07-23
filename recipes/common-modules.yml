@@ -21,6 +21,7 @@ modules:
     install:
       - code
       - clang
+      - gdb
       - gcc
       - git
       - git-lfs
@@ -80,6 +81,7 @@ modules:
       - Quick Settings Audio Devices Renamer
       - Quick Settings Audio Devices Hider
       - Quick Close in Overview
+      - Tiling Shell
 
   # This script is needed to make the 'files' module changes stick
   - type: script

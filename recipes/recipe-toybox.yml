@@ -31,6 +31,7 @@ modules:
       - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-windows-effect
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
+      - gnome-shell-extension-just-perfection
 
   - from-file: common-modules.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
