@@ -2,6 +2,8 @@
 
 > "*I'm not a "Linux Guy" really...*" &nbsp;&nbsp;&nbsp; - Brody Brooks, [May 15th, 2024](https://peoplemaking.games/@brody/112446054225760063)
 
+![Screenshot of Bluefin: Apollo Edition](screenshot.png)
+
 This repository holds the recipes for my personal, game development-focused modifications of [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/) / [Universal Blue](https://universal-blue.org/)!
 
 This makes use of the [BlueBuild](https://blue-build.org/) system, which makes it simple to roll your own ideal containerized Linux OS. Each of these recipes is custom-tailored for each of my active machines, but I've commented and documented them so anyone can copy what I've done for use in their own spins.
