@@ -45,19 +45,20 @@ modules:
       install:
         # Internet!
         - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
+        - org.gnome.Geary # Email client
         - com.discordapp.Discord
         - com.slack.Slack
         - io.gitlab.news_flash.NewsFlash # An RSS reader
-        - com.belmoussaoui.Authenticator
-        # Haven't settled on an email client
+        - com.belmoussaoui.Authenticator # Stores all your auth codes
+        - com.bitwarden.desktop # Password manager
 
         # Media!
         - org.gnome.Podcasts
         - com.obsproject.Studio
-        # - NEED MUSIC PLAYER
+        # Music player is Winamp 5 using Bottles 😎
 
         # Productivity?
-        - md.obsidian.Obsidian
+        - md.obsidian.Obsidian # Markdown editor and database
         - org.libreoffice.LibreOffice
 
         # Game Development!
@@ -66,7 +67,9 @@ modules:
         - io.itch.itch
 
         # Utilities
-        - com.usebottles.bottles
+        - com.usebottles.bottles # Run Windows applications
+        - it.mijorus.gearlever # Install/Manage AppImages
+        - it.mijorus.smile # Emoji picker
 
       remove:
       - org.mozilla.Thunderbird
@@ -77,11 +80,9 @@ modules:
     install:
       - 36 # Lock Keys indicator
       - 307 # Dash-to-Dock
-      - Remove World Clocks
-      - Quick Settings Audio Devices Renamer
-      - Quick Settings Audio Devices Hider
       - Quick Close in Overview
       - Tiling Shell
+      - 6096 # Smile extension needed to enable auto-paste
 
   # This script is needed to make the 'files' module changes stick
   - type: script
