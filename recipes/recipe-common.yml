@@ -1,16 +1,16 @@
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  # Set default Gnome settings
-  - type: gschema-overrides
-    include:
-      - zz1-common.gschema.override
-
   # Copy files over destined for the /usr and /usr/etc directories
   - type: files
     files:
       - source: system
         destination: /
+
+  # Set default Gnome settings
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
 
   - type: bling
     install:

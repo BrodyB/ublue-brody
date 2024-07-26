@@ -1,6 +1,9 @@
 [org.gnome.desktop.wm.preferences]
 num-workspaces=2
 
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+
 [org.gnome.mutter]
 check-alive-timeout=uint32 20000
 dynamic-workspaces=false
@@ -28,3 +31,6 @@ dock-fixed=false
 
 [org.gnome.desktop.screensaver]
 picture-uri='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
+
+[org.gnome.shell.extensions.user-theme]
+name='BrodyBlue Dark'
