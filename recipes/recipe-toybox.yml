@@ -14,7 +14,8 @@ modules:
 
   - type: files
     files:
-      - usr: /desktop-usr
+      - source: desktop-system
+        destination: /
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -32,6 +33,14 @@ modules:
       - gnome-shell-extension-compiz-windows-effect
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
       - gnome-shell-extension-just-perfection
+  
+  - type: gnome-extensions
+    install:
+      - Remove World Clocks
+      - Quick Settings Audio Devices Renamer
+      - Quick Settings Audio Devices Hider
 
-  - from-file: common-modules.yml
+  modules:
+    - from-file: recipe-common.yml
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

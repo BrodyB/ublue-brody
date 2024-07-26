@@ -9,8 +9,8 @@ modules:
   # Copy files over destined for the /usr and /usr/etc directories
   - type: files
     files:
-      - usr: /usr
-      - etc: /etc
+      - source: system
+        destination: /
 
   - type: bling
     install:
