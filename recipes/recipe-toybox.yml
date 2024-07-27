@@ -1,37 +1,42 @@
 # image will be published to ghcr.io/<user>/<name>
 name: ublue-brody-toybox
 # description will be included in the image's metadata
-description: A brodified version of Bazzite, meant as a daily driver powerhouse game development environment!
+description: A brodified version of Bluefin, meant as a powerhouse game development system!
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
-image-version: stable
+base-image: ghcr.io/ublue-os/bluefin
+image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
+  # Gnome settings to set for the laptop only
   - type: gschema-overrides
     include:
       - zz1-desktop.gschema.override
 
+  # Laptop-specific files to copy in
   - type: files
     files:
-      - usr: /desktop-usr
+      - source: desktop-system
+        destination: /
+
+  # Remove Bluefin's included wallpapers
+  - type: script
+    scripts:
+      - removeBluefinWallpapers.sh
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      install:
-        - org.gnome.Boxes
+    install:
+      - com.valvesoftware.Steam
 
+  # Don't need these packages on the laptop
   - type: rpm-ostree
     remove:
-      - waydroid-selinux
-      - waydroid
-      - lutris
-      - gnome-shell-extension-hanabi
-      - gnome-shell-extension-gamerzilla
-      - gnome-shell-extension-compiz-windows-effect
-      - gnome-shell-extension-compiz-alike-magic-lamp-effect
-      - gnome-shell-extension-just-perfection
-
-  - from-file: common-modules.yml
+      - input-remapper
+      - simple-scan
+      - gnome-classic-session-xsession
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
+      
+  # Include everything from the common includes
+  - from-file: recipe-common.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

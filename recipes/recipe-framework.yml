@@ -16,7 +16,8 @@ modules:
   # Laptop-specific files to copy in
   - type: files
     files:
-      - framework-usr: /usr
+      - source: framework-system
+        destination: /
 
   # Remove Bluefin's included wallpapers
   - type: script
@@ -29,9 +30,11 @@ modules:
       - input-remapper
       - solaar
       - simple-scan
-      - gnome-classic-session
       - gnome-classic-session-xsession
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
       
   # Include everything from the common includes
-  - from-file: common-modules.yml
+  - from-file: recipe-common.yml
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
