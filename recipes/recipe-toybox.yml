@@ -4,7 +4,7 @@ name: ublue-brody-toybox
 description: A brodified version of Bluefin, meant as a powerhouse game development system!
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin
+base-image: ghcr.io/ublue-os/bluefin-nvidia
 image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
