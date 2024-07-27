@@ -31,7 +31,6 @@ modules:
       - p7zip
       - p7zip-plugins
     remove:
-      - gnome-shell-extension-apps-menu
       - gnome-shell-extension-background-logo
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
@@ -70,6 +69,7 @@ modules:
         - com.usebottles.bottles # Run Windows applications
         - it.mijorus.gearlever # Install/Manage AppImages
         - it.mijorus.smile # Emoji picker
+        - com.rafaelmardojai.Blanket # Plays ambient sounds, like rain, wind, water
 
       remove:
       - org.mozilla.Thunderbird

@@ -30,8 +30,9 @@ modules:
       - input-remapper
       - solaar
       - simple-scan
-      - gnome-classic-session
       - gnome-classic-session-xsession
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
       
   # Include everything from the common includes
   modules:
