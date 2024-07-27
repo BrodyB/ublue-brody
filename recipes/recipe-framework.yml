@@ -35,7 +35,6 @@ modules:
       - gnome-shell-extension-apps-menu
       
   # Include everything from the common includes
-  modules:
-    - from-file: recipe-common.yml
+  - from-file: recipe-common.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
