@@ -50,16 +50,18 @@ If anything goes wrong or you don't care for a change to your system you just ma
 - Gnome Extensions
   - Lock Keys Indicator (Show the state of Caps Lock and Num Lock on top bar)
   - Dash-to-Dock (Keep that dock visible on the bottom)
-  - Remove World Clocks
+  - Lock Keys indicator
+  - Tiling Shell
   - Quick Settings Audio Devices Renamer
   - Quick Settings Audio Devices Hider
   - Quick Close in Overview
+  - Smile emoji picker
 
 </details>
 
 
 ## Bluefin: Apollo Edition
-![Bluefin Apollo Logo](config/files/framework-usr/share/pixmaps/fedora-logo-med.png)
+![Bluefin Apollo Logo](files/framework-system/usr/share/pixmaps/fedora-logo-med.png)
 - **System:** [Framework 13](https://frame.work/) - AMD Ryzen 7 7840U
 - **Namesake:** [GTF Apollo](https://wiki.hard-light.net/index.php/GTF_Apollo) (Descent: FreeSpace)
 - **Based on:** [Project Bluefin](https://projectbluefin.io/)
@@ -88,7 +90,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 
 ## Bazzite: Toybox Edition
-![Bazzite Toybox Logo](config/files/desktop-usr/share/plymouth/themes/spinner/watermark.png)
+![Bazzite Toybox Logo](files/desktop-system/usr/share/plymouth/themes/spinner/watermark.png)
 - **System:** Custom Build - AMD Ryzen 7 / 32GB RAM / 5TB / GeForce RTX 4070 Ti
 - **Namesake:** [DS-12 Toybox](https://en.wikipedia.org/wiki/Planetes) (PLANETES)
 - **Based on:** [Bazzite](https://bazzite.gg/)
@@ -131,4 +133,5 @@ cosign verify --key cosign.pub ghcr.io/blue-build/template
 ## Credits
 - Default wallpaper by [Maciej Rebisz](https://linktr.ee/macrebisz) - [Sunrise](https://www.deviantart.com/macrebisz/art/Sunrise-667367161)
 - Some images from Descent: FreeSpace, developed by Volition, Inc. and published by Interplay Entertainment
+- Some images from PLANETES, manga written and illustrated by Makoto Yukimura, animation produced by Sunrise/Bandai Namco Filmworks
 - Uses a modified version of [Tokyo Night](https://www.gnome-look.org/p/1681470) theme by [Fausto-Korpsvart](https://github.com/Fausto-Korpsvart)
