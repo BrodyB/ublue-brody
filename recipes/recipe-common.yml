@@ -22,7 +22,6 @@ modules:
       - code
       - clang
       - gdb
-      - gcc
       - git
       - git-lfs
       - xev # Utility for getting keycodes from input devices
