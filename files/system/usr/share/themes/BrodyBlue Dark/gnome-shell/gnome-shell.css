@@ -1767,7 +1767,7 @@ StEntry StLabel.hint-text,
 
 .popup-menu .popup-menu-content {
   padding: 6px;
-  background-color: rgba(36, 40, 59, 0.95);
+  background-color: rgba(36, 40, 59, 0.85);
   border-radius: 18px;
   margin: 0;
   box-shadow: 0 6px 15px -6px rgba(0, 0, 0, 0.25);
