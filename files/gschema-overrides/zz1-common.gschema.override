@@ -8,6 +8,15 @@ color-scheme='prefer-dark'
 check-alive-timeout=uint32 20000
 dynamic-workspaces=false
 
+[org.gnome.settings-daemon/plugins/media-keys]
+home=['<Super>e']
+www=['<Super>b']
+
+[org.gnome.settings-daemon/plugins/custom-keybindings/custom0]
+name='Terminal
+binding='<Super>t'
+command='ptyxis --new-window'
+
 [org.gnome.settings-daemon.plugins.power]
 ambient-enabled=false
 

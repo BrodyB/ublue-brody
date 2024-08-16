@@ -37,5 +37,9 @@ modules:
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
       - gnome-shell-extension-just-perfection
 
+  - type: script
+    scripts:
+    - setGdmDesktopBackground.sh
+
   - from-file: recipe-common.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

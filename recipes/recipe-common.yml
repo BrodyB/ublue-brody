@@ -53,6 +53,7 @@ modules:
         # Media!
         - org.gnome.Podcasts
         - com.obsproject.Studio
+        - fr.handbrake.ghb
         # Music player is Winamp 5 using Bottles 😎
 
         # Productivity?
@@ -82,6 +83,7 @@ modules:
       - Quick Close in Overview
       - Tiling Shell
       - 6096 # Smile extension needed to enable auto-paste
+      - Toggle Headphone
 
   # This script is needed to make the 'files' module changes stick
   - type: script
