@@ -29,6 +29,7 @@ modules:
       - sassc
       - p7zip
       - p7zip-plugins
+      - xwaylandvideobridge
     remove:
       - gnome-shell-extension-background-logo
       - gnome-shell-extension-launch-new-instance
