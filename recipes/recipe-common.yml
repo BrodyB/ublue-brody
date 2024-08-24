@@ -30,6 +30,7 @@ modules:
       - p7zip
       - p7zip-plugins
       - xwaylandvideobridge
+      - libvirt # For Gnome Boxes communication with host OS
     remove:
       - gnome-shell-extension-background-logo
       - gnome-shell-extension-launch-new-instance
