@@ -32,7 +32,6 @@ modules:
       - xwaylandvideobridge
       - libvirt # For Gnome Boxes communication with host OS
     remove:
-      - gnome-shell-extension-background-logo
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
