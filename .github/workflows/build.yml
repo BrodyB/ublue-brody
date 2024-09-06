@@ -23,6 +23,7 @@ jobs:
         recipe:
           # !! Add your recipes here
           - recipe-framework.yml
+          - recipe-apollo-nvidia.yml
           - recipe-toybox.yml
     steps:
        # the build is fully handled by the reusable github action
