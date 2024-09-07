@@ -4,7 +4,7 @@ name: ublue-brody-toybox
 description: A brodified version of Bazzite, meant as a daily driver powerhouse game development environment!
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
+base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia-open
 image-version: stable
 
 modules:
@@ -33,9 +33,7 @@ modules:
       - lutris
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-gamerzilla
-      - gnome-shell-extension-compiz-windows-effect
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
-      - gnome-shell-extension-just-perfection
 
   # - type: script
   #   scripts:
