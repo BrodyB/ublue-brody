@@ -23,6 +23,8 @@ modules:
     install:
       - dotnet-sdk-6.0 # For Unreal Engine development
       - aspnetcore-runtime-6.0
+      - openrgb
+      - solaar
     remove:
       - waydroid-selinux
       - waydroid
@@ -31,9 +33,11 @@ modules:
       - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
-  # - type: gnome-extensions
-  #   remove:
-  #     - 4222 # Hot Edge
+  - type: gnome-extensions
+    install:
+      - Solaar extension
+    uninstall:
+      - 4222 # Hot Edge
 
   # - type: script
   #   scripts:
