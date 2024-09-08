@@ -15,26 +15,3 @@ mass=80
 [org.gnome.shell.extensions.gsconnect]
 name='Toybox'
 
-[org.gnome.shell]
-enabled-extensions=[
-    'supergfxctl-gex@asus-linux.org',
-    'caffeine@patapon.info',
-    'appindicatorsupport@rgcjonas.gmail.com',
-    'blur-my-shell@aunetx',
-    'compiz-windows-effect@hermes83.github.com',
-    'dash-to-dock@micxgx.gmail.com',
-    'gsconnect@andyholmes.github.io',
-    'just-perfection-desktop@just-perfection',
-    'logomenu@aryan_k',
-    'tilingshell@ferrarodomenico.com',
-    'smile-extension@mijorus.it',
-    'toggleAudio@blackeyeprojects.de',
-    'user-theme@gnome-shell-extensions.gcampax.github.com',
-    'lockkeys@vaina.lt',
-    'middleclickclose@paolo.tranquilli.gmail.com'
-]
-disabled-extensions=[
-    'background-logo@fedorahosted.org',
-    'hotedge@jonathan.jdoda.ca'
-]
-

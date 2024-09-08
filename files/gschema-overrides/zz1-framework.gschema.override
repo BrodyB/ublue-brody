@@ -5,4 +5,4 @@ show-battery-percentage=true
 tap-to-click=false
 
 [org.gnome.shell.extensions.gsconnect]
-name='Toybox'
+name='Apollo (Framework)'
