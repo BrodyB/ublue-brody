@@ -53,7 +53,6 @@ sleep-inactive-ac-type='nothing'
 [org.gnome.shell.extensions.dash-to-dock]
 dock-fixed=false
 show-apps-at-top=true
-click-action='focus-minimized-or-appspread'
 custom-theme-shrink=true
 disable-overview-on-startup=true
 apply-custom-theme=true
