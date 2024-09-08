@@ -30,7 +30,7 @@ modules:
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
-      - gnome-shell-extension-hot-edge
+      - 4222 # Hot Edge
 
   # - type: script
   #   scripts:
