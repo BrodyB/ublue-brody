@@ -34,7 +34,9 @@ ambient-enabled=false
 
 [org.gnome.shell.extensions.blur-my-shell]
 sigma=8
-panel.blur=false
+
+[org.gnome.shell.extensions.blur-my-shell.panel]
+blur=false
 
 [org.gnome.desktop.datetime]
 automatic-timezone=true
