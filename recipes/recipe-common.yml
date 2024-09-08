@@ -7,11 +7,6 @@ modules:
       - source: system
         destination: /
 
-  # Set default Gnome settings
-  - type: gschema-overrides
-    include:
-      - zz1-common.gschema.override
-
   - type: bling
     install:
       - dconf-update-service
@@ -85,6 +80,12 @@ modules:
       - Tiling Shell
       - 6096 # Smile extension needed to enable auto-paste
       - Toggle Headphone
+      - Vitals
+
+  # Set default Gnome settings
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
 
   # This script is needed to make the 'files' module changes stick
   - type: script

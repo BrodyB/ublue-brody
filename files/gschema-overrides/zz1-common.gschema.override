@@ -4,24 +4,37 @@ num-workspaces=2
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
 
+[org.gnome.nautilus.icon-view]
+default-zoom-level='small-plus'
+
 [org.gnome.mutter]
 check-alive-timeout=uint32 20000
 dynamic-workspaces=false
+
+[org.gnome.desktop.search-providers]
+disabled=['org.gnome.Software.desktop']
+enabled=['com.belmoussaoui.Authenticator.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Weather.desktop']
 
 [org.gnome.settings-daemon/plugins/media-keys]
 home=['<Super>e']
 www=['<Super>b']
 
 [org.gnome.settings-daemon/plugins/custom-keybindings/custom0]
-name='Terminal
+name='Terminal'
 binding='<Super>t'
 command='ptyxis --new-window'
+
+[org.gnome.settings-daemon/plugins/custom-keybindings/custom3]
+name='Emoji Picker'
+binding='<Super>slash'
+command='flatpak run it.mijorus.smile'
 
 [org.gnome.settings-daemon.plugins.power]
 ambient-enabled=false
 
 [org.gnome.shell.extensions.blur-my-shell]
 sigma=8
+panel.blur=false
 
 [org.gnome.desktop.datetime]
 automatic-timezone=true
@@ -37,9 +50,33 @@ sleep-inactive-ac-type='nothing'
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-fixed=false
+intelligenthide-mode='ALL_WINDOWS'
+show-apps-at-top=true
+click-action='focus-minimized-or-appspread'
+custom-theme-shrink=true
+disable-overview-on-startup=true
+apply-custom-theme=true
 
 [org.gnome.desktop.screensaver]
 picture-uri='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
 
 [org.gnome.shell.extensions.user-theme]
 name='BrodyBlue Dark'
+
+[org.gtk.gtk4.settings.file-chooser]
+sort-directories-first=true
+show-hidden=true
+
+[org.gnome.shell.extensions.tilingshell]
+enable-snap-assist=false
+override-window-menu=false
+
+[org.gnome.shell.extensions.toggle-audio]
+enable-toggle-headphone-key=true
+
+[org.gnome.shell.extensions.user-theme]
+name='BrodyBlue Dark'
+
+[org.gnome.shell.extensions.middleclickclose]
+rearrange-delay=500
