@@ -30,6 +30,9 @@ modules:
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
+
+  - type: gnome-extensions
+    remove:
       - 4222 # Hot Edge
 
   # - type: script

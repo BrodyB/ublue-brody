@@ -81,6 +81,8 @@ modules:
       - 6096 # Smile extension needed to enable auto-paste
       - Toggle Headphone
       - Vitals
+      - 4470 # Media Controls
+      - 906 # Sound Input & Output Audio Chooser
 
   # Set default Gnome settings
   - type: gschema-overrides
