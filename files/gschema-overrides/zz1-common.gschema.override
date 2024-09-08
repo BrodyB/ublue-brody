@@ -52,7 +52,6 @@ sleep-inactive-ac-type='nothing'
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-fixed=false
-intelligenthide-mode='ALL_WINDOWS'
 show-apps-at-top=true
 click-action='focus-minimized-or-appspread'
 custom-theme-shrink=true
@@ -61,7 +60,6 @@ apply-custom-theme=true
 
 [org.gnome.desktop.screensaver]
 picture-uri='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
-picture-uri-dark='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
 
 [org.gnome.shell.extensions.user-theme]
 name='BrodyBlue Dark'
