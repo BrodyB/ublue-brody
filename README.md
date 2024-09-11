@@ -41,17 +41,18 @@ If anything goes wrong or you don't care for a change to your system you just ma
   - Podcasts (just a really nice, simple podcast application)
   - OBS Studio
 - Productivity
-  - LibreOffice
+  - LibreOffice (Office stuff)
   - Obsidian (Markdown editor I use as a knowledge-base and task tracker)
 - Utilities
   - 7zip (The best archiving tool around)
   - xev (Tool to get keycodes and input event names)
   - Bottles (Creates containers to run Windows applications)
+  - Blanket (plays soothing sounds!)
 - Gnome Extensions
   - Lock Keys Indicator (Show the state of Caps Lock and Num Lock on top bar)
   - Dash-to-Dock (Keep that dock visible on the bottom)
   - Lock Keys indicator
-  - Tiling Shell
+  - Tiling Shell  
   - Quick Settings Audio Devices Renamer
   - Quick Settings Audio Devices Hider
   - Quick Close in Overview
@@ -127,7 +128,7 @@ If built on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+cosign verify --key cosign.pub ghcr.io/brodyb/ublue-brody-toybox
 ```
 
 ## Credits

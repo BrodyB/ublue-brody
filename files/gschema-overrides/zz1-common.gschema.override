@@ -58,8 +58,9 @@ custom-theme-shrink=true
 disable-overview-on-startup=true
 apply-custom-theme=true
 
-[org.gnome.desktop.screensaver]
+[org.gnome.desktop.background]
 picture-uri='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
 
 [org.gnome.shell.extensions.user-theme]
 name='BrodyBlue Dark'
@@ -78,5 +79,22 @@ enable-toggle-headphone-key=true
 [org.gnome.shell.extensions.user-theme]
 name='BrodyBlue Dark'
 
+[org.gnome.desktop.interface]
+gtk-theme='BrodyBlue Dark'
+
 [org.gnome.shell.extensions.middleclickclose]
 rearrange-delay=500
+
+[org.gnome.shell.extensions.vitals]
+show-fan=false
+show-system=false
+show-storage=false
+position-in-panel=2
+fixed-widths=true
+
+[org.gnome.shell.extensions.tilingshell]
+enable-snap-assist=false
+override-window-menu=false
+
+[org.gnome.shell.extensions.gsconnect]
+show-indicators=true

@@ -14,17 +14,18 @@ modules:
   # Install OS-level software and remove some existing packages
   - type: rpm-ostree
     install:
-      - code
-      - clang
+      - code # VSCode
+      - clang # C Language compiler (needed for Unreal Editor 5)
       - gdb
       - git
       - git-lfs
       - xev # Utility for getting keycodes from input devices
       - fastfetch
       - sassc
+      - hugo # Static site generator
       - p7zip
       - p7zip-plugins
-      - xwaylandvideobridge
+      - xwaylandvideobridge # Needed to share screen on apps like Discord
       - libvirt # For Gnome Boxes communication with host OS
     remove:
       - gnome-shell-extension-launch-new-instance
@@ -60,6 +61,7 @@ modules:
         - org.blender.Blender
         - org.kde.krita
         - io.itch.itch
+        - io.github.MakovWait.Godots
 
         # Utilities
         - com.usebottles.bottles # Run Windows applications
@@ -81,8 +83,7 @@ modules:
       - 6096 # Smile extension needed to enable auto-paste
       - Toggle Headphone
       - Vitals
-      # - 4470 # Media Controls
-      # - 906 # Sound Input & Output Audio Chooser
+      - 4470 # Media Controls
 
   # Set default Gnome settings
   - type: gschema-overrides
