@@ -8,11 +8,6 @@ base-image: ghcr.io/ublue-os/bluefin
 image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
-  # Gnome settings to set for the laptop only
-  - type: gschema-overrides
-    include:
-      - zz1-framework.gschema.override
-
   # Laptop-specific files to copy in
   - type: files
     files:
@@ -37,5 +32,10 @@ modules:
       
   # Include everything from the common includes
   - from-file: recipe-common.yml
+
+# Gnome settings to set for the laptop only
+  - type: gschema-overrides
+    include:
+      - zz5-framework.gschema.override
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

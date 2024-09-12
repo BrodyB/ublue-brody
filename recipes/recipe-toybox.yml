@@ -43,9 +43,10 @@ modules:
   #   scripts:
   #   - setGdmDesktopBackground.sh
 
+  - from-file: recipe-common.yml
+
   - type: gschema-overrides
     include:
-      - zz1-desktop.gschema.override
+      - zz5-desktop.gschema.override
 
-  - from-file: recipe-common.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
