@@ -14,8 +14,7 @@ modules:
   # Install OS-level software and remove some existing packages
   - type: rpm-ostree
     install:
-      - code # VSCode
-      - clang # C Language compiler (needed for Unreal Editor 5)
+      - code
       - gdb
       - git
       - git-lfs
