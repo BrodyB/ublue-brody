@@ -51,6 +51,7 @@ modules:
         - com.obsproject.Studio
         - fr.handbrake.ghb
         # Music player is Winamp 5 using Bottles 😎
+        - org.tenacityaudio.Tenacity
 
         # Productivity?
         - md.obsidian.Obsidian # Markdown editor and database
@@ -80,13 +81,12 @@ modules:
       - Quick Close in Overview
       - Tiling Shell
       - 6096 # Smile extension needed to enable auto-paste
-      - Toggle Headphone
       - Vitals
       - 4470 # Media Controls
       - Click to close overview # click on empty space in Overview to close it
-      - Weather or Not # Show a simple weather widget on the top panel
-      - Quick Settings Audio Devices Hider
-      - Quick Settings Audio Devices Renamer
+      - Date Menu Formatter
+    remove:
+      - Logo Menu
 
   # Set default Gnome settings
   - type: gschema-overrides

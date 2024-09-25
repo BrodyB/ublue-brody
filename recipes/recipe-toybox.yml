@@ -33,17 +33,21 @@ modules:
       - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
-  - type: gnome-extensions
-    install:
-      - Solaar extension
-    uninstall:
-      - 4222 # Hot Edge
-
   # - type: script
   #   scripts:
   #   - setGdmDesktopBackground.sh
 
   - from-file: recipe-common.yml
+
+  - type: gnome-extensions
+    install:
+      - Solaar extension
+      - Toggle Headphone
+      - Weather or Not # Show a simple weather widget on the top panel
+      - Quick Settings Audio Devices Hider
+      - Quick Settings Audio Devices Renamer
+    uninstall:
+      - 4222 # Hot Edge
 
   - type: gschema-overrides
     include:
