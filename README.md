@@ -26,20 +26,24 @@ If anything goes wrong or you don't care for a change to your system you just ma
 - Development
   - Visual Studio Code
   - Clang (Compiles C code)
-  - GCC (also compiles C code)
   - Git / Git-LFS (Somehow git version control isn't installed by default??)
   - Blender (3D modeler)
   - Krita (Photoshop replacement)
   - Itch.io (I used this to download some tools/assets I own)
+  - Godots (a Godot engine version manager a la Unity Hub)
 - Internet
   - LibreWolf (Firefox stripped of tracking)
-  - Discord
-  - Slack
+  - Geary (simple email client)
+  - Discord (howdy, gamers)
+  - Slack (hello, coworkers)
   - NewsFlash RSS reader
   - Authenticator (for keeping those 2FA keys)
+  - BitWarden password manager
 - Media
   - Podcasts (just a really nice, simple podcast application)
-  - OBS Studio
+  - OBS Studio (recording gameplay footage)
+  - Handbrake (for compressing/encoding videos)
+  - Tenacity (a fork of Audacity, for audio editing)
 - Productivity
   - LibreOffice (Office stuff)
   - Obsidian (Markdown editor I use as a knowledge-base and task tracker)
@@ -48,15 +52,18 @@ If anything goes wrong or you don't care for a change to your system you just ma
   - xev (Tool to get keycodes and input event names)
   - Bottles (Creates containers to run Windows applications)
   - Blanket (plays soothing sounds!)
+  - Gear Lever (for managing AppImages)
+  - Smile (emoji picker)
 - Gnome Extensions
   - Lock Keys Indicator (Show the state of Caps Lock and Num Lock on top bar)
   - Dash-to-Dock (Keep that dock visible on the bottom)
-  - Lock Keys indicator
-  - Tiling Shell  
-  - Quick Settings Audio Devices Renamer
-  - Quick Settings Audio Devices Hider
-  - Quick Close in Overview
-  - Smile emoji picker
+  - Lock Keys indicator (top panel indicator for Num Lock/Caps Lock status)
+  - Tiling Shell (adds "fancy zones" style of window tiling)
+  - Quick Close in Overview (close buttons on windows in Overview)
+  - Click to Close Overview (click empty space in the Overview to close it)
+  - Vitals (System activity indicators for the top panel)
+  - Media Controls (show music playing on the top bar)
+  - Date Menu Formatter (Change the way the date/time is shown on the top)
 
 </details>
 
@@ -96,7 +103,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 - **Namesake:** [DS-12 Toybox](https://en.wikipedia.org/wiki/Planetes) (PLANETES)
 - **Based on:** [Bazzite](https://bazzite.gg/)
 
-Deriving from Bazzite, a gaming-focused image, I built this to be my daily driver for game development work. Plus play a game every now-and-then. Includes everything from Apollo, but with more things for gaming and running virtual machines.
+Deriving from Bazzite (Gnome edition), a gaming-focused image, I built this to be my daily driver for game development work. Plus play a game every now-and-then. Includes everything from Apollo, but with more things for gaming and running virtual machines.
 
 ### Installation
 To rebase an existing atomic Fedora installation to the latest build:
