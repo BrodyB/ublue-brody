@@ -98,7 +98,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 
 ## Bazzite: Toybox Edition
-![Bazzite Toybox Logo](files/desktop-system/usr/share/plymouth/themes/spinner/watermark.png)
+![Bazzite Toybox Logo](files/desktop-system/usr/share/pixmaps/fedora-gdm-logo.png)
 - **System:** Custom Build - AMD Ryzen 7 / 32GB RAM / 5TB / GeForce RTX 4070 Ti
 - **Namesake:** [DS-12 Toybox](https://en.wikipedia.org/wiki/Planetes) (PLANETES)
 - **Based on:** [Bazzite](https://bazzite.gg/)
