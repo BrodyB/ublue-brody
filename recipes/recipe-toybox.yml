@@ -21,8 +21,8 @@ modules:
 
   - type: rpm-ostree
     install:
-      - dotnet-sdk-6.0 # For Unreal Engine development
-      - aspnetcore-runtime-6.0
+      - dotnet-sdk-8.0 # For Unreal Engine development
+      - aspnetcore-runtime-8.0
       - openrgb
       - solaar
     remove:
