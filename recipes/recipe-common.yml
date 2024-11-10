@@ -50,7 +50,6 @@ modules:
         - org.gnome.Podcasts
         - com.obsproject.Studio
         - fr.handbrake.ghb
-        # Music player is Winamp 5 using Bottles 😎
         - org.tenacityaudio.Tenacity
 
         # Productivity?
@@ -59,6 +58,7 @@ modules:
 
         # Game Development!
         - org.blender.Blender
+        - net.blockbench.Blockbench
         - org.kde.krita
         - io.itch.itch
         - io.github.MakovWait.Godots
