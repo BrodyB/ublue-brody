@@ -25,6 +25,7 @@ modules:
       - aspnetcore-runtime-8.0
       - openrgb
       - solaar
+      - sunshine
     remove:
       - waydroid-selinux
       - waydroid

@@ -16,6 +16,8 @@ modules:
     install:
       - code
       - gdb
+      - clang
+      - ninja-build
       - git
       - git-lfs
       - xev # Utility for getting keycodes from input devices
