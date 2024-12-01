@@ -26,6 +26,7 @@ modules:
       - openrgb
       - solaar
       - sunshine
+      - v4l-utils
     remove:
       - waydroid-selinux
       - waydroid
