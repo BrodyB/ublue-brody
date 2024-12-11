@@ -87,7 +87,7 @@ modules:
       - Media Controls
       - Click to close overview # click on empty space in Overview to close it
       - Date Menu Formatter
-    remove:
+    uninstall:
       - Logo Menu
 
   # Set default Gnome settings
