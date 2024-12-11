@@ -69,10 +69,6 @@ name='BrodyBlue Dark'
 sort-directories-first=true
 show-hidden=true
 
-[org.gnome.shell.extensions.tilingshell]
-enable-snap-assist=false
-override-window-menu=false
-
 [org.gnome.shell.extensions.toggle-audio]
 enable-toggle-headphone-key=true
 
@@ -91,10 +87,6 @@ show-system=false
 show-storage=false
 position-in-panel=2
 fixed-widths=true
-
-[org.gnome.shell.extensions.tilingshell]
-enable-snap-assist=false
-override-window-menu=false
 
 [org.gnome.shell.extensions.gsconnect]
 show-indicators=true
