@@ -78,12 +78,12 @@ modules:
   # Add these Gnome extentions
   - type: gnome-extensions
     install:
-      - Lock Keys
-      - Dash to Dock
-      - Quick Close in Overview
-      - Smile - complementary extension
+      - 36 # Lock Keys
+      - 307 # Dash to Dock
+      # - Quick Close in Overview
+      - 6096 # Smile - complementary extension
       - Vitals
-      - Media Controls
+      - 4470 # Media Controls
       - Click to close overview # click on empty space in Overview to close it
       - Date Menu Formatter
     uninstall:
