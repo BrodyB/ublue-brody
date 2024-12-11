@@ -49,7 +49,7 @@ modules:
       - Quick Settings Audio Devices Hider
       - Quick Settings Audio Devices Renamer
     uninstall:
-      - 4222 # Hot Edge
+      - Hot Edge
 
   - type: gschema-overrides
     include:
