@@ -21,8 +21,6 @@ modules:
 
   - type: rpm-ostree
     install:
-      - dotnet-sdk-8.0 # For Unreal Engine and C# application development
-      - aspnetcore-runtime-8.0
       - openrgb
       - solaar
       - sunshine
