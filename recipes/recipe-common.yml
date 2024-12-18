@@ -16,8 +16,6 @@ modules:
     install:
       - code
       - gdb
-      - clang
-      - ninja-build
       - git
       - git-lfs
       - xev # Utility for getting keycodes from input devices
@@ -26,7 +24,6 @@ modules:
       - hugo # Static site generator
       - p7zip
       - p7zip-plugins
-      - xwaylandvideobridge # Needed to share screen on apps like Discord
       - libvirt # For Gnome Boxes communication with host OS
     remove:
       - gnome-shell-extension-launch-new-instance
@@ -40,7 +37,7 @@ modules:
     system:
       install:
         # Internet!
-        - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
+        - io.github.zen_browser.zen # Fork of Firefox with a nice customizable interface
         - org.gnome.Geary # Email client
         - com.discordapp.Discord
         - com.slack.Slack
