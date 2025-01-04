@@ -24,6 +24,7 @@ jobs:
           # !! Add your recipes here
           - recipe-framework.yml
           - recipe-toybox.yml
+          - recipe-steamdeck.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image

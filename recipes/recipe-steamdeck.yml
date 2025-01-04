@@ -1,35 +1,38 @@
-# module configuration, executed in order
-# you can include multiple instances of the same module
+# image will be published to ghcr.io/<user>/<name>
+name: ublue-brody-steamdeck
+# description will be included in the image's metadata
+description: A brodified version of Bazzite for Steam Deck, meant as a console image with some game dev tools!
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bazzite-deck-gnome
+image-version: stable
+
 modules:
-  # Copy files over destined for the /usr and /usr/etc directories
   - type: files
     files:
       - source: system
         destination: /
-
-  - type: bling
-    install:
-      - dconf-update-service
-
-  # Install OS-level software and remove some existing packages
+        
   - type: rpm-ostree
     install:
       - code
       - gdb
       - git
       - git-lfs
-      - xev # Utility for getting keycodes from input devices
       - fastfetch
-      - sassc
-      - hugo # Static site generator
-      - p7zip
-      - p7zip-plugins
-      - libvirt # For Gnome Boxes communication with host OS
     remove:
+      - waydroid-selinux
+      - waydroid
+      - lutris
+      - gnome-shell-extension-hanabi
+      - gnome-shell-extension-compiz-alike-magic-lamp-effect
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
-      - gnome-shell-extension-caffeine
+
+  - type: bling
+    install:
+      - dconf-update-service
 
   # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks
@@ -38,35 +41,19 @@ modules:
       install:
         # Internet!
         - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
-        - org.gnome.Geary # Email client
         - com.discordapp.Discord
-        - com.slack.Slack
-        - io.gitlab.news_flash.NewsFlash # An RSS reader
-        - com.belmoussaoui.Authenticator # Stores all your auth codes
-        - com.bitwarden.desktop # Password manager
 
-        # Media!
-        - org.gnome.Podcasts
-        - com.obsproject.Studio
-        - fr.handbrake.ghb
-        - org.tenacityaudio.Tenacity
-
-        # Productivity?
         - md.obsidian.Obsidian # Markdown editor and database
-        - org.libreoffice.LibreOffice
 
         # Game Development!
         - org.blender.Blender
-        - net.blockbench.Blockbench
         - org.kde.krita
-        - io.itch.itch
         - io.github.MakovWait.Godots
 
         # Utilities
         - com.usebottles.bottles # Run Windows applications
         - it.mijorus.gearlever # Install/Manage AppImages
         - it.mijorus.smile # Emoji picker
-        - com.rafaelmardojai.Blanket # Plays ambient sounds, like rain, wind, water
 
       remove:
         - org.mozilla.Thunderbird
@@ -80,11 +67,10 @@ modules:
       - Quick Close in Overview
       - 6096 # Smile - complementary extension
       - Vitals
-      - 4470 # Media Controls
       - Click to close overview # click on empty space in Overview to close it
       - Date Menu Formatter
     uninstall:
-      - Logo Menu
+      - Hot Edge
 
   # Set default Gnome settings
   - type: gschema-overrides
@@ -95,3 +81,5 @@ modules:
   - type: script
     scripts:
       - initramfs.sh
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
