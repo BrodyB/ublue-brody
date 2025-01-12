@@ -32,7 +32,6 @@ modules:
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
-      - xwaylandbridge
 
   # - type: script
   #   scripts:
