@@ -27,6 +27,7 @@ modules:
       - simple-scan
       - gnome-classic-session
       - gnome-shell-extension-apps-menu
+      - gnome-tour
 
   - type: default-flatpaks
     notify: true
