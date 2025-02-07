@@ -5,7 +5,7 @@ description: A brodified version of Bluefin, meant as a lightweight game develop
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bluefin
-image-version: latest # latest is also supported if you want new updates ASAP
+image-version: stable # latest is also supported if you want new updates ASAP
 
 modules:
   # Laptop-specific files to copy in

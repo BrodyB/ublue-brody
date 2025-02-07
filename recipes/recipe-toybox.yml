@@ -30,7 +30,6 @@ modules:
       - waydroid
       - lutris
       - gnome-shell-extension-hanabi
-      - gnome-shell-extension-gamerzilla
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
   # - type: script
