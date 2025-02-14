@@ -1,0 +1,93 @@
+# image will be published to ghcr.io/<user>/<name>
+name: ublue-kristi-adventurine
+# description will be included in the image's metadata
+description: A kristified version of Bluefin, meant as a daily driver programming and gaming environment!
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bluefin-dx-nvidia-open
+image-version: stable
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  # Remove Bluefin's included wallpapers
+  - type: script
+    scripts:
+      - removeBluefinWallpapers.sh
+
+  # Bundle all of these Flatpaks from Flathub
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      install:
+        # Internet!
+        - io.gitlab.librewolf-community # Fork of Firefox without tracking/telemetry
+        - org.gnome.Boxes
+        - com.discordapp.Discord
+
+        # Media!
+        - org.gnome.Podcasts
+        - com.valvesoftware.Steam
+
+        # Productivity?
+        - org.libreoffice.LibreOffice
+
+        # Utilities
+        - com.usebottles.bottles # Run Windows applications
+        - it.mijorus.gearlever # Install/Manage AppImages
+        - it.mijorus.smile # Emoji picker
+        - com.rafaelmardojai.Blanket # Plays ambient sounds, like rain, wind, water
+
+      remove:
+        - org.mozilla.Thunderbird
+        - org.mozilla.firefox
+
+  - type: rpm-ostree
+    install:
+      - openrgb
+      - solaar
+      - v4l-utils
+      - code
+      - gdb
+      - git
+      - git-lfs
+      - fastfetch
+      - sassc
+      - p7zip
+      - p7zip-plugins
+      - libvirt # For Gnome Boxes communication with host OS
+    remove:
+      - input-remapper
+      - simple-scan
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
+      - gnome-tour
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
+      - gnome-shell-extension-caffeine
+
+  - type: gnome-extensions
+    install:
+      - Solaar extension
+      - Tiling Shell
+      - Weather or Not # Show a simple weather widget on the top panel
+      - Quick Settings Audio Devices Hider
+      - Quick Settings Audio Devices Renamer
+      - 36 # Lock Keys
+      - 307 # Dash to Dock
+      - Quick Close in Overview
+      - 6096 # Smile - complementary extension
+      - Vitals
+      - 4470 # Media Controls
+      - Click to close overview # click on empty space in Overview to close it
+
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
+      - zz5-desktop.gschema.override
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
