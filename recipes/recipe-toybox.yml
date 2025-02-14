@@ -25,6 +25,7 @@ modules:
       - solaar
       - sunshine
       - v4l-utils
+      - zsh
     remove:
       - waydroid-selinux
       - waydroid
@@ -32,9 +33,9 @@ modules:
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
-  # - type: script
-  #   scripts:
-  #   - setGdmDesktopBackground.sh
+  - type: script
+    scripts:
+    - addOhMyZsh.sh
 
   - from-file: recipe-common.yml
 
