@@ -24,7 +24,6 @@ modules:
     system:
       install:
         # Internet!
-        - io.gitlab.librewolf-community # Fork of Firefox without tracking/telemetry
         - org.gnome.Boxes
         - com.discordapp.Discord
 
@@ -43,7 +42,6 @@ modules:
 
       remove:
         - org.mozilla.Thunderbird
-        - org.mozilla.firefox
 
   - type: rpm-ostree
     install:
@@ -68,7 +66,6 @@ modules:
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
-      - gnome-shell-extension-caffeine
 
   - type: gnome-extensions
     install:
