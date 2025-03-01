@@ -29,6 +29,11 @@ modules:
       - gnome-shell-extension-apps-menu
       - gnome-tour
 
+  # Add these Gnome extentions
+  - type: gnome-extensions
+    install:
+      - Tailscale QS
+
   - type: default-flatpaks
     notify: true
     system:
