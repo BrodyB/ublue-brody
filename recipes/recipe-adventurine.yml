@@ -12,6 +12,8 @@ modules:
     files:
       - source: system
         destination: /
+      - source: adventurine-system
+        destination: /
 
   # Remove Bluefin's included wallpapers
   - type: script
@@ -24,6 +26,7 @@ modules:
     system:
       install:
         # Internet!
+        - io.gitlab.librewolf-community # Fork of Firefox without tracking/telemetry
         - org.gnome.Boxes
         - com.discordapp.Discord
 
@@ -42,6 +45,7 @@ modules:
 
       remove:
         - org.mozilla.Thunderbird
+        - org.mozilla.firefox
 
   - type: rpm-ostree
     install:
@@ -69,6 +73,7 @@ modules:
 
   - type: gnome-extensions
     install:
+      - Just Perfection
       - Solaar extension
       - Tiling Shell
       - Weather or Not # Show a simple weather widget on the top panel
@@ -81,6 +86,8 @@ modules:
       - Vitals
       - 4470 # Media Controls
       - Click to close overview # click on empty space in Overview to close it
+      - Date Menu Formatter
+      - 1007 #Window Is Ready - Notification Remover
 
   - type: gschema-overrides
     include:
