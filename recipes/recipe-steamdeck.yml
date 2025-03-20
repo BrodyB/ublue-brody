@@ -20,6 +20,7 @@ modules:
       - git
       - git-lfs
       - fastfetch
+      - syncthing
     remove:
       - waydroid-selinux
       - waydroid
