@@ -38,7 +38,7 @@ modules:
   - type: gnome-extensions
     install:
       - Solaar extension
-      - Toggle Headphone
+      # - Toggle Headphone
       - Weather or Not # Show a simple weather widget on the top panel
       - Quick Settings Audio Devices Hider
       - Quick Settings Audio Devices Renamer
