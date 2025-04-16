@@ -54,7 +54,7 @@ modules:
         # Utilities
         - com.usebottles.bottles # Run Windows applications
         - it.mijorus.gearlever # Install/Manage AppImages
-        - it.mijorus.smile # Emoji picker
+        # - it.mijorus.smile # Emoji picker
 
       remove:
         - org.mozilla.Thunderbird
@@ -66,7 +66,7 @@ modules:
       - 36 # Lock Keys
       - 307 # Dash to Dock
       - Quick Close in Overview
-      - 6096 # Smile - complementary extension
+      # - 6096 # Smile - complementary extension
       - Vitals
       - Click to close overview # click on empty space in Overview to close it
       - Date Menu Formatter
