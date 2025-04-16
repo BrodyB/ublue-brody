@@ -4,7 +4,7 @@ name: ublue-brody-apollo
 description: A brodified version of Bluefin, meant as a lightweight game development system!
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin
+base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: stable # latest is also supported if you want new updates ASAP
 
 modules:
@@ -33,6 +33,8 @@ modules:
   - type: gnome-extensions
     install:
       - Tailscale QS
+    remove:
+      - Search Light
 
   - type: default-flatpaks
     notify: true

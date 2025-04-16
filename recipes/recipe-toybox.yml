@@ -33,10 +33,6 @@ modules:
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
-  - type: script
-    scripts:
-    - addOhMyZsh.sh
-
   - from-file: recipe-common.yml
 
   - type: gnome-extensions
