@@ -33,7 +33,7 @@ modules:
   - type: gnome-extensions
     install:
       - Tailscale QS
-    remove:
+    uninstall:
       - Search Light
 
   - type: default-flatpaks
