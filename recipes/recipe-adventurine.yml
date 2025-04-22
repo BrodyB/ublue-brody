@@ -63,7 +63,6 @@ modules:
       - libvirt # For Gnome Boxes communication with host OS
     remove:
       - input-remapper
-      - simple-scan
       - gnome-classic-session
       - gnome-shell-extension-apps-menu
       - gnome-tour
