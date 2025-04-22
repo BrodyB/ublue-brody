@@ -23,8 +23,6 @@ modules:
   - type: rpm-ostree
     remove:
       - input-remapper
-      - solaar
-      - simple-scan
       - gnome-classic-session
       - gnome-shell-extension-apps-menu
       - gnome-tour
