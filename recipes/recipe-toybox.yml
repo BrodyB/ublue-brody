@@ -25,13 +25,15 @@ modules:
       - solaar
       - sunshine
       - v4l-utils
-      - zsh
     remove:
       - waydroid-selinux
       - waydroid
-      - lutris
       - gnome-shell-extension-hanabi
       - gnome-shell-extension-compiz-alike-magic-lamp-effect
+      - gnome-shell-extension-bazzite-menu
+      - malcontent-control
+      - fish
+
 
   - from-file: recipe-common.yml
 

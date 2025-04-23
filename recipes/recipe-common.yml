@@ -83,8 +83,6 @@ modules:
       - 4470 # Media Controls
       - Click to close overview # click on empty space in Overview to close it
       - Date Menu Formatter
-    uninstall:
-      - Logo Menu
 
   # Set default Gnome settings
   - type: gschema-overrides
