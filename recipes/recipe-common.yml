@@ -25,6 +25,7 @@ modules:
       - p7zip
       - p7zip-plugins
       - libvirt # For Gnome Boxes communication with host OS
+      - xcb-util-cursor
     remove:
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
