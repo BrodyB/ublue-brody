@@ -14,10 +14,11 @@ modules:
         destination: /
         
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      install:
-        - org.gnome.Boxes
+    configurations:
+      - scope: system
+        notify: true # Send notification after install/uninstall is finished (true/false)
+        install:
+          - org.gnome.Boxes
 
   - type: rpm-ostree
     install:
@@ -40,7 +41,6 @@ modules:
   - type: gnome-extensions
     install:
       - Solaar extension
-      # - Toggle Headphone
       - Weather or Not # Show a simple weather widget on the top panel
       - Quick Settings Audio Devices Hider
       - Quick Settings Audio Devices Renamer

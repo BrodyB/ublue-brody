@@ -14,29 +14,30 @@ modules:
   # Install OS-level software and remove some existing packages
   - type: rpm-ostree
     install:
-      - code
-      - gdb
-      - git
-      - git-lfs
-      - xev # Utility for getting keycodes from input devices
-      - fastfetch
-      - sassc
-      - hugo # Static site generator
-      - p7zip
-      - p7zip-plugins
-      - libvirt # For Gnome Boxes communication with host OS
-      - xcb-util-cursor
+    - code
+    - gdb
+    - git
+    - git-lfs
+    - xev # Utility for getting keycodes from input devices
+    - fastfetch
+    - sassc
+    - hugo # Static site generator
+    - p7zip
+    - p7zip-plugins
+    - libvirt # For Gnome Boxes communication with host OS
+    - xcb-util-cursor
     remove:
-      - gnome-shell-extension-launch-new-instance
-      - gnome-shell-extension-places-menu
-      - gnome-shell-extension-window-list
-      - gnome-shell-extension-caffeine
+    - gnome-shell-extension-launch-new-instance
+    - gnome-shell-extension-places-menu
+    - gnome-shell-extension-window-list
+    - gnome-shell-extension-caffeine
 
   # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      install:
+    configurations:
+      - scope: system
+        notify: true # Send notification after install/uninstall is finished (true/false)
+        install:
         # Internet!
         - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
         - org.gnome.Geary # Email client
@@ -69,28 +70,28 @@ modules:
         # - it.mijorus.smile # Emoji picker
         - com.rafaelmardojai.Blanket # Plays ambient sounds, like rain, wind, water
 
-      remove:
+        remove:
         - org.mozilla.Thunderbird
         - org.mozilla.firefox
 
   # Add these Gnome extentions
   - type: gnome-extensions
     install:
-      - 36 # Lock Keys
-      - 307 # Dash to Dock
-      - Quick Close in Overview
-      # - 6096 # Smile - complementary extension
-      - Vitals
-      - 4470 # Media Controls
-      - Click to close overview # click on empty space in Overview to close it
-      - Date Menu Formatter
+    - 36 # Lock Keys
+    - 307 # Dash to Dock
+    - Quick Close in Overview
+    - 6096 # Smile - complementary extension
+    - Vitals
+    - 4470 # Media Controls
+    - Click to close overview # click on empty space in Overview to close it
+    - Date Menu Formatter
 
   # Set default Gnome settings
   - type: gschema-overrides
     include:
-      - zz1-common.gschema.override
+    - zz1-common.gschema.override
 
   # This script is needed to make the 'files' module changes stick
   - type: script
     scripts:
-      - initramfs.sh
+    - initramfs.sh

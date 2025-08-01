@@ -10,77 +10,75 @@ image-version: stable
 modules:
   - type: files
     files:
-      - source: system
-        destination: /
-        
+    - source: system
+      destination: /
+      
   - type: rpm-ostree
     install:
-      - code
-      - gdb
-      - git
-      - git-lfs
-      - fastfetch
-      - syncthing
+    - code
+    - gdb
+    - git
+    - git-lfs
+    - fastfetch
+    - syncthing
     remove:
-      - waydroid-selinux
-      - waydroid
-      - lutris
-      - gnome-shell-extension-hanabi
-      - gnome-shell-extension-compiz-alike-magic-lamp-effect
-      - gnome-shell-extension-launch-new-instance
-      - gnome-shell-extension-places-menu
-      - gnome-shell-extension-window-list
+    - waydroid-selinux
+    - waydroid
+    - lutris
+    - gnome-shell-extension-hanabi
+    - gnome-shell-extension-compiz-alike-magic-lamp-effect
+    - gnome-shell-extension-launch-new-instance
+    - gnome-shell-extension-places-menu
+    - gnome-shell-extension-window-list
 
   - type: bling
     install:
-      - dconf-update-service
+    - dconf-update-service
 
   # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
+    configurations:
+    - scope: system
+      notify: true # Send notification after install/uninstall is finished (true/false)
       install:
-        # Internet!
-        - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
-        - com.discordapp.Discord
+      # Internet!
+      - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
+      - com.discordapp.Discord
 
-        - md.obsidian.Obsidian # Markdown editor and database
+      # Game Development!
+      - org.blender.Blender
+      - org.kde.krita
+      - io.github.MakovWait.Godots
 
-        # Game Development!
-        - org.blender.Blender
-        - org.kde.krita
-        - io.github.MakovWait.Godots
-
-        # Utilities
-        - com.usebottles.bottles # Run Windows applications
-        - it.mijorus.gearlever # Install/Manage AppImages
-        # - it.mijorus.smile # Emoji picker
+      # Utilities
+      - com.usebottles.bottles # Run Windows applications
+      - it.mijorus.gearlever # Install/Manage AppImages
 
       remove:
-        - org.mozilla.Thunderbird
-        - org.mozilla.firefox
+      - org.mozilla.Thunderbird
+      - org.mozilla.firefox
 
   # Add these Gnome extentions
   - type: gnome-extensions
     install:
-      - 36 # Lock Keys
-      - 307 # Dash to Dock
-      - Quick Close in Overview
-      # - 6096 # Smile - complementary extension
-      - Vitals
-      - Click to close overview # click on empty space in Overview to close it
-      - Date Menu Formatter
+    - 36 # Lock Keys
+    - 307 # Dash to Dock
+    - Quick Close in Overview
+    # - 6096 # Smile - complementary extension
+    - Vitals
+    - Click to close overview # click on empty space in Overview to close it
+    - Date Menu Formatter
     uninstall:
-      - Hot Edge
+    - Hot Edge
 
   # Set default Gnome settings
   - type: gschema-overrides
     include:
-      - zz1-common.gschema.override
+    - zz1-common.gschema.override
 
   # This script is needed to make the 'files' module changes stick
   - type: script
     scripts:
-      - initramfs.sh
+    - initramfs.sh
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
