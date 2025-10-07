@@ -24,6 +24,7 @@ jobs:
           # !! Add your recipes here
           - recipe-framework.yml
           - recipe-toybox.yml
+          - recipe-yso.yml
           - recipe-steamdeck.yml
           - recipe-adventurine.yml
     steps:
