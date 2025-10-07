@@ -1,0 +1,91 @@
+# image will be published to ghcr.io/<user>/<name>
+name: ublue-brody-yso
+# description will be included in the image's metadata
+description: A brodified version of Fedora Silverblue, meant as a daily driver development and rendering environment!
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/brodyb/silverbluegdx-nvidia
+image-version: latest
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+      - source: yso-system
+        destination: /
+
+  # Bundle all of these Flatpaks from Flathub
+  - type: default-flatpaks
+    configurations:
+    - notify: false
+      scope: system
+      install:
+      # Internet!
+      - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
+      - org.gnome.Geary # Email client
+      - com.discordapp.Discord
+      - com.slack.Slack
+      - io.gitlab.news_flash.NewsFlash # An RSS reader
+      - com.belmoussaoui.Authenticator # Stores all your auth codes
+      - com.bitwarden.desktop # Password manager
+
+      # Media!
+      - com.obsproject.Studio
+      - fr.handbrake.ghb
+      - org.tenacityaudio.Tenacity
+
+      # Productivity?
+      - com.vscodium.codium
+      - md.obsidian.Obsidian # Markdown editor and database
+      - org.libreoffice.LibreOffice
+
+      # Creative editors
+      - org.blender.Blender
+      - org.freecad.FreeCAD
+      - org.kde.krita
+      - org.inkscape.Inkscape
+
+      # Utilities
+      - org.gnome.Boxes
+      - com.usebottles.bottles # Run Windows applications
+      - it.mijorus.gearlever # Install/Manage AppImages
+      - it.mijorus.smile # Emoji picker
+      - com.rafaelmardojai.Blanket # Plays ambient sounds, like rain, wind, water
+      remove:
+        - org.mozilla.firefox
+
+  # Add these Gnome extentions
+  - type: gnome-extensions
+    install:
+      - 3193 # Blur my Shell
+      - 1319 # GSConnect
+      - 7065 # Tiling Shell
+      - 19 # User Themes
+      - 36 # Lock Keys
+      - 307 # Dash to Dock
+      - 6162 # Solaar
+      - Quick Close in Overview
+      - 6096 # Smile - complementary extension
+      - Vitals
+      - 4470 # Media Controls
+      - Click to close overview # click on empty space in Overview to close it
+      - Date Menu Formatter
+      - 3396 # Color Picker
+      - 1007 # Window is Ready Notif remover
+      - 1070 # Syncthing Indicator
+      - Weather or Not # Show a simple weather widget on the top panel
+
+  - type: rpm-ostree
+    install:
+      - solaar
+      - syncthing
+      - gtk-murrine-engine
+      - sassc
+
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
+      - zz1-yso.gschema.override
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -72,9 +72,6 @@ show-hidden=true
 [org.gnome.shell.extensions.toggle-audio]
 enable-toggle-headphone-key=true
 
-[org.gnome.shell.extensions.user-theme]
-name='BrodyBlue Dark'
-
 [org.gnome.desktop.interface]
 gtk-theme='BrodyBlue Dark'
 

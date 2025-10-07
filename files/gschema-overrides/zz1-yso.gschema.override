@@ -1,0 +1,2 @@
+[org.gnome.shell]
+favorite-apps=['io.gitlab.librewolf-community.desktop', 'org.gnome.Geary.desktop', 'org.gnome.Nautilus.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'org.gnome.Ptyxis.desktop', 'md.obsidian.Obsidian.desktop', 'com.discordapp.Discord.desktop', 'com.slack.Slack.desktop']
