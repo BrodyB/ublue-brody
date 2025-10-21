@@ -78,12 +78,15 @@ modules:
 
   - type: rpm-ostree
     install:
-      - solaar
+      - solaar # Support Logitech peripherals extra buttons and such
       - syncthing
-      - gtk-murrine-engine
-      - sassc
-      - freerdp
+      - gtk-murrine-engine # Required for Tokyonight theme
+      - sassc # Same as above
+      - freerdp # Required for WinBoat to work
+      - evolution-ews # Needed for GNOME's Microsoft365 integration to work
 
+
+  # Docker needed for WinBoat
   - type: rpm-ostree
     repos:
       - https://download.docker.com/linux/fedora/docker-ce.repo
