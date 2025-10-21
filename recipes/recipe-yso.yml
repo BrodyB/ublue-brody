@@ -52,6 +52,7 @@ modules:
       - it.mijorus.gearlever # Install/Manage AppImages
       - it.mijorus.smile # Emoji picker
       - com.rafaelmardojai.Blanket # Plays ambient sounds, like rain, wind, water
+      - io.github.nokse22.Exhibit # 3D model viewer
       remove:
         - org.mozilla.firefox
 
@@ -59,7 +60,6 @@ modules:
   - type: gnome-extensions
     install:
       - 3193 # Blur my Shell
-      - 1319 # GSConnect
       - 7065 # Tiling Shell
       - 19 # User Themes
       - 36 # Lock Keys
@@ -82,6 +82,7 @@ modules:
       - syncthing
       - gtk-murrine-engine
       - sassc
+      - freerdp
 
   - type: rpm-ostree
     repos:
