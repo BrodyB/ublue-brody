@@ -23,7 +23,6 @@ modules:
       install:
       # Internet!
       - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
-      - org.gnome.Geary # Email client
       - com.discordapp.Discord
       - com.slack.Slack
       - io.gitlab.news_flash.NewsFlash # An RSS reader
@@ -65,7 +64,6 @@ modules:
       - 36 # Lock Keys
       - 307 # Dash to Dock
       - 6162 # Solaar
-      - Quick Close in Overview
       - 6096 # Smile - complementary extension
       - Vitals
       - 4470 # Media Controls
@@ -73,7 +71,6 @@ modules:
       - Date Menu Formatter
       - 3396 # Color Picker
       - 1007 # Window is Ready Notif remover
-      - 1070 # Syncthing Indicator
       - Weather or Not # Show a simple weather widget on the top panel
 
   - type: rpm-ostree
@@ -84,6 +81,7 @@ modules:
       - sassc # Same as above
       - freerdp # Required for WinBoat to work
       - evolution-ews # Needed for GNOME's Microsoft365 integration to work
+      - geary # Flatpak version isn't working with Microsoft 365 for some reason??
 
 
   # Docker needed for WinBoat
