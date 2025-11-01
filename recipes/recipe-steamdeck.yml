@@ -25,7 +25,6 @@ modules:
     - waydroid-selinux
     - waydroid
     - lutris
-    - gnome-shell-extension-hanabi
     - gnome-shell-extension-compiz-alike-magic-lamp-effect
     - gnome-shell-extension-launch-new-instance
     - gnome-shell-extension-places-menu
