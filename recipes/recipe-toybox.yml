@@ -24,13 +24,10 @@ modules:
     install:
       - openrgb
       - solaar
-      - sunshine
       - v4l-utils
     remove:
       - waydroid-selinux
       - waydroid
-      - gnome-shell-extension-hanabi
-      - gnome-shell-extension-compiz-alike-magic-lamp-effect
       - gnome-shell-extension-bazzite-menu
       - malcontent-control
       - fish

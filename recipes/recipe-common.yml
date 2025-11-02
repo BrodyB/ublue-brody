@@ -22,14 +22,9 @@ modules:
     - fastfetch
     - sassc
     - hugo # Static site generator
-    - p7zip
-    - p7zip-plugins
     - libvirt # For Gnome Boxes communication with host OS
     - xcb-util-cursor
     remove:
-    - gnome-shell-extension-launch-new-instance
-    - gnome-shell-extension-places-menu
-    - gnome-shell-extension-window-list
     - gnome-shell-extension-caffeine
 
   # Bundle all of these Flatpaks from Flathub
@@ -82,7 +77,6 @@ modules:
     - Quick Close in Overview
     - 6096 # Smile - complementary extension
     - Vitals
-    - 4470 # Media Controls
     - Click to close overview # click on empty space in Overview to close it
     - Date Menu Formatter
 
