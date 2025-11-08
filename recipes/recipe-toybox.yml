@@ -5,7 +5,7 @@ description: A brodified version of Bazzite, meant as a daily driver powerhouse 
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia-open
-image-version: stable
+image-version: 42
 
 modules:
   - type: files
