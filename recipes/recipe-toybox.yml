@@ -18,34 +18,31 @@ modules:
       - scope: system
         notify: true # Send notification after install/uninstall is finished (true/false)
         install:
-          - org.gnome.Boxes
+        - org.gnome.Boxes
 
   - type: rpm-ostree
     install:
-      - openrgb
-      - solaar
-      - v4l-utils
+    - openrgb
+    - solaar
+    - v4l-utils
     remove:
-      - waydroid-selinux
-      - waydroid
-      - gnome-shell-extension-bazzite-menu
-      - malcontent-control
-      - fish
-
+    - waydroid-selinux
+    - waydroid
+    - malcontent-control
 
   - from-file: recipe-common.yml
 
   - type: gnome-extensions
     install:
-      - Solaar extension
-      - Weather or Not # Show a simple weather widget on the top panel
-      - Quick Settings Audio Devices Hider
-      - Quick Settings Audio Devices Renamer
+    - Solaar extension
+    - Weather or Not # Show a simple weather widget on the top panel
+    - Quick Settings Audio Devices Hider
+    - Quick Settings Audio Devices Renamer
     uninstall:
-      - Hot Edge
+    - Hot Edge
 
   - type: gschema-overrides
     include:
-      - zz5-desktop.gschema.override
+    - zz5-desktop.gschema.override
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

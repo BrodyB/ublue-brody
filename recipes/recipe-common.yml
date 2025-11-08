@@ -24,8 +24,6 @@ modules:
     - hugo # Static site generator
     - libvirt # For Gnome Boxes communication with host OS
     - xcb-util-cursor
-    remove:
-    - gnome-shell-extension-caffeine
 
   # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks
