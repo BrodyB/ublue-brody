@@ -21,11 +21,6 @@ modules:
     - git-lfs
     - fastfetch
     - syncthing
-    remove:
-    - waydroid-selinux
-    - waydroid
-    - lutris
-    - gnome-shell-extension-compiz-alike-magic-lamp-effect
 
   - type: bling
     install:
