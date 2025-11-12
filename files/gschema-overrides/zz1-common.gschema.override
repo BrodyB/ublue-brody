@@ -63,7 +63,7 @@ picture-uri='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
 picture-uri-dark='file:///usr/share/backgrounds/mac-rebisz-20170306-blue-sunrise.jpg'
 
 [org.gnome.shell.extensions.user-theme]
-name='BrodyBlue Dark'
+name='Tokyonight Dark Moon'
 
 [org.gtk.gtk4.settings.file-chooser]
 sort-directories-first=true
@@ -73,7 +73,7 @@ show-hidden=true
 enable-toggle-headphone-key=true
 
 [org.gnome.desktop.interface]
-gtk-theme='BrodyBlue Dark'
+gtk-theme='Tokyonight Dark Moon'
 
 [org.gnome.shell.extensions.middleclickclose]
 rearrange-delay=500

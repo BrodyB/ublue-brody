@@ -24,6 +24,8 @@ modules:
     - hugo # Static site generator
     - libvirt # For Gnome Boxes communication with host OS
     - xcb-util-cursor
+    - gtk-murrine-engine
+    - gnome-themes-extras
 
   # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks

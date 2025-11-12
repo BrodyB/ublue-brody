@@ -24,9 +24,9 @@ jobs:
           # !! Add your recipes here
           - recipe-framework.yml
           - recipe-toybox.yml
-          - recipe-yso.yml
+          # - recipe-yso.yml
           - recipe-steamdeck.yml
-          - recipe-adventurine.yml
+          # - recipe-adventurine.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image

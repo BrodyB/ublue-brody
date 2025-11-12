@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="2048"
+   height="256"
+   viewBox="0 0 195.04762 24.380952"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="logo_adventurine.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:export-filename="logo_adventurine.png"
+   inkscape:export-xdpi="11.52"
+   inkscape:export-ydpi="11.52"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3">
+    <rect
+       x="248.61538"
+       y="33.230769"
+       width="1116.3077"
+       height="228.30769"
+       id="rect5" />
+    <rect
+       x="235.69231"
+       y="37.538462"
+       width="936"
+       height="99.076923"
+       id="rect4" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#e7e7e7"
+     bordercolor="#000000"
+     borderopacity="0.10980392"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#686868"
+     inkscape:zoom="1.625"
+     inkscape:cx="532.30769"
+     inkscape:cy="89.230769"
+     inkscape:window-width="2730"
+     inkscape:window-height="1502"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3" />
+  <path
+     style="fill:#6be7b4;fill-opacity:1;stroke:none;stroke-width:0.03;stroke-opacity:1"
+     d="M 20.713846,14.843077 11.963077,3.2492307 3.3969231,15.212308 12.073846,20.824615 Z"
+     id="path4" />
+  <path
+     d="m 12,3 -9,12 9,6 9,-6 z"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path1"
+     style="display:inline;stroke:#3acb8f;stroke-opacity:1"
+     inkscape:label="Border" />
+  <path
+     d="m 3,15 9,-3 9,3"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path2"
+     style="display:inline;stroke:#3acb8f;stroke-opacity:1"
+     inkscape:label="Horz" />
+  <path
+     d="M 12,3 V 21"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path3"
+     style="display:inline;stroke:#3acb8f;stroke-opacity:1"
+     inkscape:label="Vert" />
+  <text
+     xml:space="preserve"
+     transform="matrix(0.0952381,0,0,0.0952381,-0.7032967,-0.11721612)"
+     id="text4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Magic Retro';-inkscape-font-specification:'Magic Retro';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);fill:#6be7b4;fill-opacity:1;stroke:#3acb8f;stroke-opacity:1;stroke-width:5.9999997;stroke-dasharray:none;stroke-dashoffset:0;stroke-linejoin:round;stroke-linecap:round;paint-order:normal"><tspan
+       x="248.61523"
+       y="210.83047"
+       id="tspan1">Adventurine</tspan></text>
+</svg>
