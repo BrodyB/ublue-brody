@@ -15,12 +15,11 @@ modules:
       
   - type: rpm-ostree
     install:
-    - code
     - gdb
     - git
-    - git-lfs
     - fastfetch
     - syncthing
+    - code
 
   - type: bling
     install:
@@ -67,9 +66,6 @@ modules:
     include:
     - zz1-common.gschema.override
 
-  # This script is needed to make the 'files' module changes stick
-  - type: script
-    scripts:
-    - initramfs.sh
+  - type: initramfs
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
