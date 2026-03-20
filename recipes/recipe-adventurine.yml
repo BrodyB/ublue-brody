@@ -59,8 +59,6 @@ modules:
     - git-lfs
     - fastfetch
     - sassc
-    - p7zip
-    - p7zip-plugins
     - libvirt # For Gnome Boxes communication with host OS
     remove:
     - input-remapper
@@ -77,8 +75,6 @@ modules:
     - Solaar extension
     - Tiling Shell
     - Weather or Not # Show a simple weather widget on the top panel
-    - Quick Settings Audio Devices Hider
-    - Quick Settings Audio Devices Renamer
     - 36 # Lock Keys
     - 307 # Dash to Dock
     - Quick Close in Overview
