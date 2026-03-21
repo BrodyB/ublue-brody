@@ -53,7 +53,7 @@ modules:
     - openrgb
     - solaar
     - v4l-utils
-    - code
+    # - code
     - gdb
     - git
     - git-lfs

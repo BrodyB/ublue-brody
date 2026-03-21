@@ -1,3 +1,25 @@
+/* General Typography */
+.dialog .confirm-dialog-title,
+.modal-dialog .confirm-dialog-title {
+  font-weight: 800;
+  font-size: 15ptpt;
+}
+
+.workspace-switch-osd, .media-keys-osd {
+  font-weight: 700;
+  font-size: 13ptpt;
+}
+
+.polkit-dialog-user-combo {
+  font-weight: 700;
+  font-size: 11ptpt;
+}
+
+.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
+  font-weight: 400;
+  font-size: 9ptpt;
+}
+
 stage {
   color: #fffbef;
 }
@@ -6,7 +28,8 @@ stage {
   color: rgba(0, 0, 0, 0);
 }
 
-.sound-button {
+.sound-button, .dialog .dialog-button,
+.modal-dialog .dialog-button {
   min-height: 24px;
   padding: 5px 32px;
   transition-duration: 100ms;
@@ -15,37 +38,45 @@ stage {
   background-color: rgba(255, 251, 239, 0.04);
 }
 
-.sound-button:focus {
+.sound-button:focus, .dialog .dialog-button:focus,
+.modal-dialog .dialog-button:focus {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.12);
   border-radius: 12px;
 }
 
-.sound-button:hover {
+.sound-button:hover, .dialog .dialog-button:hover,
+.modal-dialog .dialog-button:hover {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.12);
   border-radius: 12px;
+  color: #a7c080;
 }
 
-.sound-button:hover:focus {
+.sound-button:hover:focus, .dialog .dialog-button:hover:focus,
+.modal-dialog .dialog-button:hover:focus {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.3);
   border-radius: 12px;
 }
 
-.sound-button:active {
+.sound-button:active, .dialog .dialog-button:active,
+.modal-dialog .dialog-button:active {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.3);
   border-radius: 12px;
 }
 
-.sound-button:insensitive {
+.sound-button:insensitive, .dialog .dialog-button:insensitive,
+.modal-dialog .dialog-button:insensitive {
   color: rgba(255, 251, 239, 0.5);
   background-color: rgba(255, 251, 239, 0.04);
   border-radius: 12px;
 }
 
-.notification-button, .notification-icon-button, .menu #notification .notification-button,
+.polkit-dialog-user-combo, .dialog .dialog-button:destructive-action,
+.modal-dialog .dialog-button:destructive-action, .dialog .dialog-button:default,
+.modal-dialog .dialog-button:default, .notification-button, .notification-icon-button, .menu #notification .notification-button,
 .menu #notification .notification-icon-button, .popup-menu #notification .notification-button,
 .popup-menu #notification .notification-icon-button, #notification .notification-button,
 #notification .notification-icon-button, .calendar-today-home-button,
@@ -55,7 +86,9 @@ stage {
   background-color: transparent;
 }
 
-.notification-button:hover, .notification-icon-button:hover, #notification .notification-button:hover,
+.polkit-dialog-user-combo:hover, .dialog .dialog-button:hover:destructive-action,
+.modal-dialog .dialog-button:hover:destructive-action, .dialog .dialog-button:hover:default,
+.modal-dialog .dialog-button:hover:default, .notification-button:hover, .notification-icon-button:hover, #notification .notification-button:hover,
 #notification .notification-icon-button:hover, .calendar-today-home-button:hover,
 .calendar-today-home-button-enabled:hover {
   color: #fffbef;
@@ -63,7 +96,9 @@ stage {
   border-radius: 12px;
 }
 
-.notification-button:active, .notification-icon-button:active, #notification .notification-button:active,
+.polkit-dialog-user-combo:active, .dialog .dialog-button:active:destructive-action,
+.modal-dialog .dialog-button:active:destructive-action, .dialog .dialog-button:active:default,
+.modal-dialog .dialog-button:active:default, .notification-button:active, .notification-icon-button:active, #notification .notification-button:active,
 #notification .notification-icon-button:active, .calendar-today-home-button:active,
 .calendar-today-home-button-enabled:active {
   color: #fffbef;
@@ -71,7 +106,9 @@ stage {
   border-radius: 12px;
 }
 
-.notification-button:insensitive, .notification-icon-button:insensitive, #notification .notification-button:insensitive,
+.polkit-dialog-user-combo:insensitive, .dialog .dialog-button:insensitive:destructive-action,
+.modal-dialog .dialog-button:insensitive:destructive-action, .dialog .dialog-button:insensitive:default,
+.modal-dialog .dialog-button:insensitive:default, .notification-button:insensitive, .notification-icon-button:insensitive, #notification .notification-button:insensitive,
 #notification .notification-icon-button:insensitive, .calendar-today-home-button:insensitive,
 .calendar-today-home-button-enabled:insensitive {
   color: rgba(255, 251, 239, 0.32);
@@ -79,6 +116,7 @@ stage {
   border-radius: 12px;
 }
 
+.dialog-button-box .modal-dialog-button,
 .modal-dialog-button-box .modal-dialog-button {
   min-height: 24px;
   padding: 6px 30px;
@@ -88,26 +126,30 @@ stage {
   background-color: rgba(255, 251, 239, 0.04);
 }
 
+.dialog-button-box .modal-dialog-button:hover,
 .modal-dialog-button-box .modal-dialog-button:hover {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.12);
 }
 
+.dialog-button-box .modal-dialog-button:focus,
 .modal-dialog-button-box .modal-dialog-button:focus {
   color: #a7c080;
 }
 
+.dialog-button-box .modal-dialog-button:active,
 .modal-dialog-button-box .modal-dialog-button:active {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.3);
 }
 
+.dialog-button-box .modal-dialog-button:insensitive,
 .modal-dialog-button-box .modal-dialog-button:insensitive {
   color: rgba(255, 251, 239, 0.32);
   background-color: transparent;
 }
 
-#menu-search-entry, .notification StEntry, .menu #notification StEntry, .popup-menu #notification StEntry, #notification StEntry {
+#menu-search-entry, .prompt-dialog-password-entry, .notification StEntry, .menu #notification StEntry, .popup-menu #notification StEntry, #notification StEntry {
   padding: 3px 12px;
   min-height: 24px;
   caret-size: 1px;
@@ -120,19 +162,19 @@ stage {
   background-color: rgba(255, 251, 239, 0.04);
 }
 
-#menu-search-entry:focus, .notification StEntry:focus, .menu #notification StEntry:focus, .popup-menu #notification StEntry:focus, #notification StEntry:focus, #menu-search-entry:hover, .notification StEntry:hover, .menu #notification StEntry:hover, .popup-menu #notification StEntry:hover, #notification StEntry:hover {
+#menu-search-entry:focus, .prompt-dialog-password-entry:focus, .notification StEntry:focus, .menu #notification StEntry:focus, .popup-menu #notification StEntry:focus, #notification StEntry:focus, #menu-search-entry:hover, .prompt-dialog-password-entry:hover, .notification StEntry:hover, .menu #notification StEntry:hover, .popup-menu #notification StEntry:hover, #notification StEntry:hover {
   color: #fffbef;
   background-color: rgba(255, 251, 239, 0.04);
   border: 2px solid #a7c080;
 }
 
-#menu-search-entry:insensitive, .notification StEntry:insensitive, .menu #notification StEntry:insensitive, .popup-menu #notification StEntry:insensitive, #notification StEntry:insensitive {
+#menu-search-entry:insensitive, .prompt-dialog-password-entry:insensitive, .notification StEntry:insensitive, .menu #notification StEntry:insensitive, .popup-menu #notification StEntry:insensitive, #notification StEntry:insensitive {
   border: 2px solid transparent;
   background-color: rgba(255, 251, 239, 0.04);
   color: rgba(255, 251, 239, 0.5);
 }
 
-#menu-search-entry StIcon.capslock-warning, .notification StEntry StIcon.capslock-warning, .menu #notification StEntry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning, #notification StEntry StIcon.capslock-warning {
+#menu-search-entry StIcon.capslock-warning, .prompt-dialog-password-entry StIcon.capslock-warning, .notification StEntry StIcon.capslock-warning, .menu #notification StEntry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning, #notification StEntry StIcon.capslock-warning {
   icon-size: 16px;
   warning-color: #dfa000;
   padding: 0 6px;
@@ -444,8 +486,8 @@ StScrollBar StButton#hhandle:active {
 
 #panel {
   font-weight: bold;
-  height: 36px;
-  width: 42px;
+  height: 34px;
+  width: 40px;
 }
 
 #panel:highlight {
@@ -1219,18 +1261,23 @@ StScrollBar StButton#hhandle:active {
   background-color: #fffbef;
 }
 
+.dialog,
 .modal-dialog {
   color: #fffbef;
-  background-color: rgba(38, 44, 50, 0.95);
-  padding: 0 5px 6px 5px;
+  background-color: rgba(51, 60, 67, 0.95);
+  padding: 6px;
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.75), 0 5px 18px rgba(0, 0, 0, 0.55);
+  /* border: 1px solid $divider; */
+  border: 2px solid #a7c080;
 }
 
+.dialog > StBoxLayout:first-child,
 .modal-dialog > StBoxLayout:first-child {
   padding: 20px 10px 10px 10px;
 }
 
+.dialog-button-box,
 .modal-dialog-button-box {
   spacing: 0;
   margin: 0;
@@ -1239,10 +1286,60 @@ StScrollBar StButton#hhandle:active {
   border: none;
 }
 
+.dialog-button-box .modal-dialog-button,
 .modal-dialog-button-box .modal-dialog-button {
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
+}
+
+.dialog .dialog-content-box,
+.modal-dialog .dialog-content-box {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  spacing: 6px;
+  max-width: 18em;
+}
+
+.dialog .dialog-button:default:hover,
+.modal-dialog .dialog-button:default:hover {
+  background-color: #fa7c79 !important;
+  color: #fffbef !important;
+}
+
+.dialog .dialog-button:destructive-action,
+.modal-dialog .dialog-button:destructive-action {
+  background-color: #f85552;
+  color: #fffbef;
+}
+
+.dialog .confirm-dialog-title,
+.modal-dialog .confirm-dialog-title {
+  text-align: center;
+}
+
+.dialog .end-session-dialog,
+.modal-dialog .end-session-dialog {
+  min-width: 40em;
+}
+
+.dialog .end-session-dialog .dialog-content-box,
+.modal-dialog .end-session-dialog .dialog-content-box {
+  spacing: 0;
+}
+
+.dialog .end-session-dialog .dialog-list,
+.modal-dialog .end-session-dialog .dialog-list {
+  spacing: 0;
+}
+
+.dialog .end-session-dialog .dialog-list .dialog-list-title,
+.modal-dialog .end-session-dialog .dialog-list .dialog-list-title {
+  color: #dfa000;
+  background-color: tranparentize(#dfa000, 0.9);
+  padding: 9px;
+  border-radius: 12px;
+  margin: 6px 0;
 }
 
 .run-dialog {
@@ -1300,6 +1397,45 @@ StScrollBar StButton#hhandle:active {
   box-shadow: none;
   background: none;
   background-gradient-direction: none;
+}
+
+.prompt-dialog {
+  width: 26em;
+}
+
+.prompt-dialog .dialog-content-box {
+  spacing: 24px;
+  margin-bottom: 18px;
+}
+
+.prompt-dialog-password-entry {
+  width: 20em;
+}
+
+.prompt-dialog-password-layout {
+  spacing: 12px;
+}
+
+.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
+  text-align: center;
+}
+
+.prompt-dialog-error-label {
+  color: #f85552;
+}
+
+.polkit-dialog-user-layout {
+  text-align: center;
+  spacing: 2px;
+}
+
+.polkit-dialog-user-combo {
+  border-radius: 9px;
+  padding: 6px 36px;
+}
+
+.polkit-dialog-user-combo:insensitive {
+  color: #fffbef;
 }
 
 /* CinnamonMountOperation Dialogs */
@@ -1621,6 +1757,61 @@ StScrollBar StButton#hhandle:active {
   color: #fffbef;
 }
 
+.media-keys-osd {
+  color: #fffbef;
+  background-color: rgba(51, 60, 67, 0.99);
+  border: 1px solid rgba(255, 251, 239, 0.11);
+  border-radius: 12px;
+  text-align: center;
+  padding: 24px;
+}
+
+.media-keys-osd {
+  margin-bottom: 1em;
+  border-radius: 9999px;
+  font-weight: bold;
+  spacing: 12px;
+  padding: 12px 24px;
+}
+
+.media-keys-osd > * {
+  spacing: 12px;
+}
+
+.media-keys-osd StIcon {
+  icon-size: 32px;
+}
+
+.media-keys-osd StLabel:ltr {
+  margin-right: 6px;
+}
+
+.media-keys-osd StLabel:rtl {
+  margin-left: 6px;
+}
+
+.media-keys-osd .level {
+  min-width: 160px;
+  -barlevel-height: 6px;
+  -barlevel-background-color: #293136;
+  -barlevel-active-background-color: #fffbef;
+  -barlevel-amplify-color: #dfa000;
+  -barlevel-amplify-separator-width: 3px;
+}
+
+.media-keys-osd .level:ltr {
+  margin-right: 6px;
+}
+
+.media-keys-osd .level:rtl {
+  margin-left: 6px;
+}
+
+.media-keys-osd .level-bar {
+  border-radius: 12px;
+  background-color: #fffbef;
+}
+
 .info-osd {
   text-align: center;
   font-weight: bold;
@@ -1658,6 +1849,38 @@ StScrollBar StButton#hhandle:active {
 .osd-window .level-bar {
   border-radius: 12px;
   background-color: #a7c080;
+}
+
+.workspace-switch-osd {
+  color: #a7c080;
+  background-color: rgba(51, 60, 67, 0.99);
+  /* border: 1px solid transparentize($divider, 0.01); */
+  border: 2px solid #a7c080;
+  border-radius: 9px;
+  text-align: center;
+  padding: 24px;
+  min-width: 140px;
+  margin-bottom: 1em;
+  border-radius: 9999px;
+  font-weight: bold;
+  padding: 12px 36px 0 36px;
+}
+
+.workspace-switch-osd-indicator-box {
+  spacing: 12px;
+}
+
+.workspace-switch-osd-indicator {
+  background-color: rgba(255, 251, 239, 0.5);
+  padding: 2.6666666667px;
+  margin: 13.3333333333px;
+  border-radius: 32px;
+}
+
+.workspace-switch-osd-indicator:active {
+  background-color: #a7c080;
+  padding: 5.3333333333px;
+  margin: 10.6666666667px;
 }
 
 .window-list-box {
