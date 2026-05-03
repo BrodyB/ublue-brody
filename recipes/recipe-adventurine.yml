@@ -72,10 +72,10 @@ modules:
   - type: gnome-extensions
     install:
     - Just Perfection
-    - Solaar extension
+    - 6162 # Solaar extension
     - Tiling Shell
     - Weather or Not # Show a simple weather widget on the top panel
-    - 36 # Lock Keys
+    # - 36 # Lock Keys
     - 307 # Dash to Dock
     - Quick Close in Overview
     - 6096 # Smile - complementary extension

@@ -71,7 +71,7 @@ modules:
   # Add these Gnome extentions
   - type: gnome-extensions
     install:
-    - 36 # Lock Keys
+    # - 36 # Lock Keys
     - 307 # Dash to Dock
     - Quick Close in Overview
     - 6096 # Smile - complementary extension
