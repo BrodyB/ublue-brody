@@ -36,14 +36,12 @@ modules:
         - io.gitlab.librewolf-community # Fork of Firefox with a nice customizable interface
         - org.gnome.Geary # Email client
         - com.discordapp.Discord
-        - com.slack.Slack
         - io.gitlab.news_flash.NewsFlash # An RSS reader
         - com.belmoussaoui.Authenticator # Stores all your auth codes
         - com.bitwarden.desktop # Password manager
 
         # Media!
         - org.gnome.Podcasts
-        - com.obsproject.Studio
         - fr.handbrake.ghb
         - org.tenacityaudio.Tenacity
 
@@ -53,7 +51,6 @@ modules:
 
         # Game Development!
         - org.blender.Blender
-        - net.blockbench.Blockbench
         - org.kde.krita
         - io.itch.itch
         - io.github.MakovWait.Godots
