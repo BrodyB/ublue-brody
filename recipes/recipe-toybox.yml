@@ -22,12 +22,9 @@ modules:
 
   - type: rpm-ostree
     install:
-    - openrgb
     - solaar
     - v4l-utils
     remove:
-    - waydroid-selinux
-    - waydroid
     - malcontent-control
 
   - from-file: recipe-common.yml
