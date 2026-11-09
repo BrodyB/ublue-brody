@@ -13,13 +13,14 @@ modules:
     - source: system
       destination: /
       
-  - type: rpm-ostree
+  - type: dnf
     install:
-    - gdb
-    - git
-    - fastfetch
-    - syncthing
-    - code
+      packages:
+      - gdb
+      - git
+      - fastfetch
+      - syncthing
+      - code
 
   - type: bling
     install:

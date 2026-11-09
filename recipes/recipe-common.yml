@@ -12,19 +12,20 @@ modules:
       - dconf-update-service
 
   # Install OS-level software and remove some existing packages
-  - type: rpm-ostree
+  - type: dnf
     install:
-    - code
-    - gdb
-    - git
-    - git-lfs
-    - xev # Utility for getting keycodes from input devices
-    - fastfetch
-    - sassc
-    - hugo # Static site generator
-    - libvirt # For Gnome Boxes communication with host OS
-    - xcb-util-cursor
-    - gtk-murrine-engine
+      packages:
+      - code
+      - gdb
+      - git
+      - git-lfs
+      - xev # Utility for getting keycodes from input devices
+      - fastfetch
+      - sassc
+      - hugo # Static site generator
+      - libvirt # For Gnome Boxes communication with host OS
+      - xcb-util-cursor
+      - gtk-murrine-engine
 
   # Bundle all of these Flatpaks from Flathub
   - type: default-flatpaks

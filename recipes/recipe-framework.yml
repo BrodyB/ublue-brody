@@ -20,12 +20,13 @@ modules:
       - removeBluefinWallpapers.sh
 
   # Don't need these packages on the laptop
-  - type: rpm-ostree
+  - type: dnf
     remove:
-      - input-remapper
-      - gnome-classic-session
-      - gnome-shell-extension-apps-menu
-      - gnome-tour
+      packages:
+        - input-remapper
+        - gnome-classic-session
+        - gnome-shell-extension-apps-menu
+        - gnome-tour
 
   # Add these Gnome extentions
   - type: gnome-extensions

@@ -48,26 +48,28 @@ modules:
         - org.mozilla.Thunderbird
         - org.mozilla.firefox
 
-  - type: rpm-ostree
+  - type: dnf
     install:
-    - openrgb
-    - solaar
-    - v4l-utils
-    # - code
-    - gdb
-    - git
-    - git-lfs
-    - fastfetch
-    - sassc
-    - libvirt # For Gnome Boxes communication with host OS
+      packages:
+      - openrgb
+      - solaar
+      - v4l-utils
+      # - code
+      - gdb
+      - git
+      - git-lfs
+      - fastfetch
+      - sassc
+      - libvirt # For Gnome Boxes communication with host OS
     remove:
-    - input-remapper
-    - gnome-classic-session
-    - gnome-shell-extension-apps-menu
-    - gnome-tour
-    - gnome-shell-extension-launch-new-instance
-    - gnome-shell-extension-places-menu
-    - gnome-shell-extension-window-list
+      packages:
+      - input-remapper
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
+      - gnome-tour
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
 
   - type: gnome-extensions
     install:

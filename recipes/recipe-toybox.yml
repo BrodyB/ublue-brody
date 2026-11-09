@@ -20,12 +20,14 @@ modules:
         install:
         - org.gnome.Boxes
 
-  - type: rpm-ostree
+  - type: dnf
     install:
-    - solaar
-    - v4l-utils
+      packages:
+      - solaar
+      - v4l-utils
     remove:
-    - malcontent-control
+      packages:
+      - malcontent-control
 
   - from-file: recipe-common.yml
 
