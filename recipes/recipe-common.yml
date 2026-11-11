@@ -71,11 +71,11 @@ modules:
     install:
     # - 36 # Lock Keys
     - 307 # Dash to Dock
-    - Quick Close in Overview
-    - 6096 # Smile - complementary extension
+    # - Quick Close in Overview
+    # - 6096 # Smile - complementary extension
     - Vitals
     - Click to close overview # click on empty space in Overview to close it
-    - Date Menu Formatter
+    # - Date Menu Formatter
 
   # Set default Gnome settings
   - type: gschema-overrides
