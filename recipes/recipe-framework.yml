@@ -28,11 +28,6 @@ modules:
         - gnome-shell-extension-apps-menu
         - gnome-tour
 
-  # Add these Gnome extentions
-  - type: gnome-extensions
-    uninstall:
-      - Search Light
-
   - type: default-flatpaks
     configurations:
       - scope: system
